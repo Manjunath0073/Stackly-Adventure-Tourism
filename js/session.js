@@ -5,8 +5,8 @@
   const SESSION_KEY = 'zstackly.session.v1';
   const UI_KEYS = ['zstackly.client.prefs.v1', 'zstackly.consultant.prefs.v1'];
   const DASHBOARDS = Object.freeze({
-    client: '/client-dashboard.html',
-    consultant: '/consultant-dashboard.html'
+    client: 'client-dashboard.html',
+    consultant: 'consultant-dashboard.html'
   });
   const VALID_ROLES = ['client', 'consultant'];
   const AVATAR_COUNT = 5;
@@ -122,12 +122,12 @@
 
     if (!session) {
       const next = encodeURIComponent(currentPathWithHash());
-      window.location.replace('/login.html?next=' + next);
+      window.location.replace('login.html?next=' + next);
       return false;
     }
 
     if (session.role !== role) {
-      window.location.replace(DASHBOARDS[session.role] || '/login.html');
+      window.location.replace(DASHBOARDS[session.role] || 'login.html');
       return false;
     }
 

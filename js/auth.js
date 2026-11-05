@@ -3,8 +3,8 @@
 
   const reducedMotion = Boolean(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   const ROLE_MAP = {
-    client: '/client-dashboard.html',
-    consultant: '/consultant-dashboard.html'
+    client: 'client-dashboard.html',
+    consultant: 'consultant-dashboard.html'
   };
   const ROLES = {
     client: {
@@ -55,7 +55,7 @@
 
   function destinationForRole(role) {
     const meta = ROLES[role];
-    if (!meta) return '/login.html';
+    if (!meta) return 'login.html';
     return safeNextForRole(role) || meta.redirect;
   }
 
@@ -138,7 +138,7 @@
     }
 
     if (crossLink) {
-      const baseHref = isSignup ? '/login.html' : '/signup.html';
+      const baseHref = isSignup ? 'login.html' : 'signup.html';
       crossLink.href = meta ? baseHref + '?role=' + encodeURIComponent(role) : baseHref;
     }
 

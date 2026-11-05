@@ -347,27 +347,27 @@ html.js .service-preview.is-active .service-preview__tags li:nth-child(3) { tran
 }
 
 .discipline:nth-child(1) {
-  --discipline-image: url("/assets/img/services/1454496522488-7a8e488e8606.webp");
+  --discipline-image: url("../assets/img/services/1454496522488-7a8e488e8606.webp");
 }
 
 .discipline:nth-child(2) {
-  --discipline-image: url("/assets/img/services/1528181304800-259b08848526.webp");
+  --discipline-image: url("../assets/img/services/1528181304800-259b08848526.webp");
 }
 
 .discipline:nth-child(3) {
-  --discipline-image: url("/assets/img/services/1488646953014-85cb44e25828.webp");
+  --discipline-image: url("../assets/img/services/1488646953014-85cb44e25828.webp");
 }
 
 .discipline:nth-child(4) {
-  --discipline-image: url("/assets/img/services/1500375592092-40eb2168fd21.webp");
+  --discipline-image: url("../assets/img/services/1500375592092-40eb2168fd21.webp");
 }
 
 .discipline:nth-child(5) {
-  --discipline-image: url("/assets/img/services/1517824806704-9040b037703b.webp");
+  --discipline-image: url("../assets/img/services/1517824806704-9040b037703b.webp");
 }
 
 .discipline:nth-child(6) {
-  --discipline-image: url("/assets/img/services/1529156069898-49953e39b3ac.webp");
+  --discipline-image: url("../assets/img/services/1529156069898-49953e39b3ac.webp");
 }
 
 .discipline::before {

@@ -516,7 +516,7 @@
   if (signOutButton) {
     signOutButton.addEventListener('click', function () {
       Session.clearSession();
-      window.location.href = '/login.html';
+      window.location.href = 'login.html';
     });
   }
   document.addEventListener('pointerdown', function (event) {

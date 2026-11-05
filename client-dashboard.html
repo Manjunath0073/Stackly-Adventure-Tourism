@@ -10,10 +10,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/dashboard.css">
+  <link rel="stylesheet" href="css/dashboard.css">
   <title>Overview — Stackly Tourism Client</title>
 
-  <script src="/js/session.js"></script>
+  <script src="js/session.js"></script>
   <script>
     (function () {
       'use strict';
@@ -44,9 +44,9 @@
   <div class="app" id="app" hidden>
     <aside class="sidebar" id="sidebar" aria-label="Workspace sidebar">
       <div class="sidebar__head">
-        <a class="brand" href="/index.html" aria-label="Stackly Tourism client workspace, overview">
+        <a class="brand" href="index.html" aria-label="Stackly Tourism client workspace, overview">
           <span class="brand__type">
-            <img class="brand__logo" src="/assets/logo/logo-stackly.webp" alt="Stackly Tourism" width="118" height="34">
+            <img class="brand__logo" src="assets/logo/logo-stackly.webp" alt="Stackly Tourism" width="118" height="34">
             <span class="brand__sub">Client workspace</span>
           </span>
         </a>
@@ -142,7 +142,7 @@
         <div class="topbar__search">
           <label class="sr-only" for="workspace-search">Search the current workspace view</label>
           <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg>
-          <input id="workspace-search" type="search" autocomplete="off" spellcheck="false" placeholder="Search journeys, documents, messages" aria-keyshortcuts="/">
+          <input id="workspace-search" type="search" autocomplete="off" spellcheck="false" placeholder="Search journeys, documents, messages" aria-keyshortcuts="">
           <span class="topbar__search-hint" aria-hidden="true">/</span>
         </div>
 
@@ -181,7 +181,7 @@
                 <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="7" r="3"/><path d="M4 17c.7-3.1 3-4.5 6-4.5s5.3 1.4 6 4.5"/></svg>
                 Profile &amp; settings
               </a>
-              <a class="menu-item" href="/contact.html" role="menuitem">
+              <a class="menu-item" href="contact.html" role="menuitem">
                 <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="M8 7.7a2.2 2.2 0 1 1 2.8 2.1c-.8.3-.8.8-.8 1.4M10 14.4v.1"/></svg>
                 Help
               </a>
@@ -212,8 +212,8 @@
   <div class="sr-only" id="route-announcer" aria-live="polite" aria-atomic="true"></div>
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
-  <script src="/js/client-data.js" defer></script>
-  <script src="/js/charts.js" defer></script>
-  <script src="/js/dashboard.js" defer></script>
+  <script src="js/client-data.js" defer></script>
+  <script src="js/charts.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
 </body>
 </html>

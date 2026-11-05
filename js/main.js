@@ -75,7 +75,7 @@
     rule.setAttribute('aria-hidden', 'true');
 
     const contact = document.createElement('a');
-    contact.href = '/contact.html';
+    contact.href = 'contact.html';
     contact.appendChild(document.createTextNode('Talk to us '));
     const arrow = document.createElement('span');
     arrow.setAttribute('aria-hidden', 'true');
@@ -521,29 +521,4 @@
     });
   });
 
-  function initRouteGuard() {
-    if (document.body.matches('.page--404, .page--auth, .dash-body')) return;
-
-    const protectedSelector = 'header, footer, form, .skip-link, .testimonial-carousel, .faq, .service-faq, .contact-map, .contact-studio__directions';
-
-    function isProtected(element) {
-      return Boolean(element.closest(protectedSelector));
-    }
-
-    document.querySelectorAll('a[href]').forEach(function (link) {
-      if (isProtected(link)) return;
-      link.setAttribute('href', '/404.html');
-    });
-
-    document.addEventListener('click', function (event) {
-      const target = event.target.closest('a[href], button');
-      if (!target || isProtected(target)) return;
-      if (event.button !== 0 && event.type === 'click') return;
-      event.preventDefault();
-      event.stopImmediatePropagation();
-      window.location.assign('/404.html');
-    }, true);
-  }
-
-  initRouteGuard();
 })();

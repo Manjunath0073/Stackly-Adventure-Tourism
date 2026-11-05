@@ -3495,27 +3495,27 @@ html.js .final-cta__title[data-reveal].is-visible {
 
 /* SERVICES CARDS — photographic backgrounds with readable theme scrims */
 .service-card--trek {
-  --service-image: url("/assets/img/home/1501555088652-021faa106b9b.webp");
+  --service-image: url("../assets/img/home/1501555088652-021faa106b9b.webp");
 }
 
 .service-card--river {
-  --service-image: url("/assets/img/home/1500375592092-40eb2168fd21.webp");
+  --service-image: url("../assets/img/home/1500375592092-40eb2168fd21.webp");
 }
 
 .service-card--wildlife {
-  --service-image: url("/assets/img/home/1549366021-9f761d450615.webp");
+  --service-image: url("../assets/img/home/1549366021-9f761d450615.webp");
 }
 
 .service-card--local {
-  --service-image: url("/assets/img/home/1478131143081-80f7f84ca84d.webp");
+  --service-image: url("../assets/img/home/1478131143081-80f7f84ca84d.webp");
 }
 
 .service-card--private {
-  --service-image: url("/assets/img/home/1500530855697-b586d89ba3ee.webp");
+  --service-image: url("../assets/img/home/1500530855697-b586d89ba3ee.webp");
 }
 
 .service-card--slow {
-  --service-image: url("/assets/img/home/1470770841072-f978cf4d019e.webp");
+  --service-image: url("../assets/img/home/1470770841072-f978cf4d019e.webp");
 }
 
 .service-card:nth-child(n) {
@@ -4050,7 +4050,7 @@ html.js .nav__panel-meta {
     background-image:
       linear-gradient(180deg, rgb(11 11 15 / 48%) 0%, rgb(11 11 15 / 84%) 58%, rgb(11 11 15 / 97%) 100%),
       linear-gradient(90deg, rgb(11 11 15 / 94%) 0%, rgb(11 11 15 / 76%) 55%, rgb(11 11 15 / 54%) 100%),
-      url("/assets/img/home/1470770841072-f978cf4d019e.webp");
+      url("../assets/img/home/1470770841072-f978cf4d019e.webp");
     background-position: center;
     background-size: cover;
     box-shadow: none;

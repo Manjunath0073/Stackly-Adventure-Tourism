@@ -17,7 +17,7 @@
           /* Fall through to the home page. */
         }
       }
-      window.location.assign('/index.html');
+      window.location.assign('index.html');
     });
   }
 
