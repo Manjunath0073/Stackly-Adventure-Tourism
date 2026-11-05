@@ -694,6 +694,7 @@ html.js .discipline.is-visible::after {
 
 .process-path__steps {
   position: relative;
+  z-index: 1;
   display: grid;
   gap: 12px;
   padding-left: 44px;
@@ -701,6 +702,7 @@ html.js .discipline.is-visible::after {
 
 .process-path::before {
   position: absolute;
+  z-index: 0;
   top: 0;
   bottom: 0;
   left: 16px;
@@ -711,6 +713,7 @@ html.js .discipline.is-visible::after {
 
 .process-path::after {
   position: absolute;
+  z-index: 0;
   top: 0;
   bottom: 0;
   left: 16px;
