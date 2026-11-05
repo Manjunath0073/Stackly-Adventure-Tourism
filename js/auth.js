@@ -673,7 +673,7 @@
       }
       window.setTimeout(function () {
         window.location.href = destination;
-      }, 1200);
+      }, 3000);
     };
 
     form.addEventListener('submit', function (event) {

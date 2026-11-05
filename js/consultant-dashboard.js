@@ -256,6 +256,17 @@
       toastTimer = 0;
     }, 3200);
   }
+  function flashStatus(node, message, baseClass, stateClass) {
+    if (!node) return;
+    if (node.flashTimer) window.clearTimeout(node.flashTimer);
+    node.className = baseClass + (stateClass ? ' ' + stateClass : '');
+    node.textContent = message;
+    node.flashTimer = window.setTimeout(function () {
+      node.className = baseClass;
+      node.textContent = '';
+      node.flashTimer = 0;
+    }, 3000);
+  }
   function readJSON(key) {
     try { const raw = localStorage.getItem(key); return raw ? JSON.parse(raw) : null; } catch (error) { return null; }
   }
@@ -3202,6 +3213,7 @@
         if (!body) {
           textarea.focus();
           announce('Type a message before sending.');
+          showToast('Type a message before sending.');
           return;
         }
         const at = new Date().toISOString();
@@ -3214,6 +3226,7 @@
         const next = conversation.querySelector('textarea');
         if (next) next.focus();
         announce((composerMode === 'internal' ? 'Internal note' : 'Client message') + ' sent to ' + thread.participant + '.');
+        showToast((composerMode === 'internal' ? 'Internal note' : 'Client message') + ' sent to ' + thread.participant + '.');
       });
       textarea.addEventListener('keydown', function (event) {
         if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') {
@@ -3494,8 +3507,7 @@
       avatarMeta.textContent = appState.prefs.title + ' · ' + currentSession.email;
       refreshUserChrome();
       updateRateDisplay();
-      profileStatus.className = 'save-status is-success';
-      profileStatus.textContent = 'Profile saved. Sidebar updated.';
+      flashStatus(profileStatus, 'Profile saved. Sidebar updated.', 'save-status', 'is-success');
       showToast('Profile and availability updated.');
       announce('Profile saved. Sidebar name and utilization target updated.');
     });
@@ -3592,8 +3604,7 @@
         return { id: entry.row.id, role: entry.row.role, rate: Number(entry.input.value) };
       });
       savePrefs();
-      rateStatus.className = 'save-status is-success';
-      rateStatus.textContent = 'Rate card saved on this device.';
+      flashStatus(rateStatus, 'Rate card saved on this device.', 'save-status', 'is-success');
       announce('Rate card saved. Blended rate ' + blendedValue.textContent + ' per hour.');
     });
 
@@ -3629,7 +3640,7 @@
 
     function preferenceChanged(message) {
       savePrefs();
-      prefsStatus.textContent = message + ' Preference saved on this device.';
+      flashStatus(prefsStatus, message + ' Preference saved on this device.', 'settings-note');
       announce(message);
     }
 
@@ -3721,7 +3732,14 @@
       deactivateResult.hidden = false;
       deactivateConfirmActions.hidden = true;
       announce('Simulated deactivation confirmed. Profile and session remain unchanged.');
-      showToast('Simulation only — your profile remains active.');
+      showToast('Simulation only - your profile remains active.');
+      window.setTimeout(function () {
+        deactivateConfirm.hidden = true;
+        deactivateResult.hidden = true;
+        deactivateConfirmActions.hidden = false;
+        deactivateInput.value = '';
+        deactivateButton.disabled = true;
+      }, 3000);
     });
 
     append(grid, leftColumn, rightColumn);

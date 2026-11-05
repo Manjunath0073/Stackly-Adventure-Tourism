@@ -357,6 +357,18 @@
     }, 3200);
   }
 
+  function flashStatus(node, message, baseClass, stateClass) {
+    if (!node) return;
+    if (node.flashTimer) window.clearTimeout(node.flashTimer);
+    node.className = baseClass + (stateClass ? ' ' + stateClass : '');
+    node.textContent = message;
+    node.flashTimer = window.setTimeout(function () {
+      node.className = baseClass;
+      node.textContent = '';
+      node.flashTimer = 0;
+    }, 3000);
+  }
+
   function readJSON(key) {
     try {
       const raw = window.localStorage.getItem(key);
@@ -2834,6 +2846,7 @@
         if (!body) {
           textarea.focus();
           announce('Type a message before sending.');
+          showToast('Type a message before sending.');
           return;
         }
         const at = new Date().toISOString();
@@ -2846,6 +2859,7 @@
         const nextTextarea = conversation.querySelector('textarea');
         if (nextTextarea) nextTextarea.focus();
         announce('Message sent to ' + thread.name + '.');
+        showToast('Message sent to ' + thread.name + '.');
       });
       textarea.addEventListener('keydown', function (event) {
         if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') {
@@ -3075,8 +3089,7 @@
       }
       currentSession = updated;
       refreshUserChrome();
-      profileStatus.className = 'save-status is-success';
-      profileStatus.textContent = 'Profile saved. Sidebar updated.';
+      flashStatus(profileStatus, 'Profile saved. Sidebar updated.', 'save-status', 'is-success');
       showToast('Profile updated across the workspace.');
       announce('Profile saved. Sidebar name updated to ' + currentSession.name + '.');
     });
@@ -3113,7 +3126,7 @@
 
     function applyPreferenceChange(message) {
       savePrefs();
-      prefsStatus.textContent = message + ' Preferences saved on this device.';
+      flashStatus(prefsStatus, message + ' Preferences saved on this device.', 'settings-note');
       announce(message);
     }
 
@@ -3261,8 +3274,7 @@
         fieldError(currentPassword.input, document.getElementById('security-current-error'), '');
         fieldError(newPassword.input, document.getElementById('security-new-error'), '');
         fieldError(confirmPassword.input, document.getElementById('security-confirm-error'), '');
-        securityMessage.className = 'security-message is-success';
-        securityMessage.textContent = 'Password updated (simulated). No credentials were stored.';
+        flashStatus(securityMessage, 'Password updated (simulated). No credentials were stored.', 'security-message', 'is-success');
         announce('Password update simulated successfully. No credentials were stored.');
       }, 650);
     });
@@ -3325,6 +3337,11 @@
       }
     });
 
+    dangerForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (!dangerDelete.disabled) dangerDelete.click();
+    });
+
     dangerDelete.addEventListener('click', function () {
       if (dangerDelete.disabled) return;
       confirmPanel.hidden = false;
@@ -3344,7 +3361,15 @@
       confirmActions.hidden = true;
       confirmPanel.classList.add('is-confirmed');
       announce('Simulated deletion confirmed. No account or session data was removed.');
-      showToast('Simulation only — your account and session are unchanged.');
+      showToast('Simulation only - your account and session are unchanged.');
+      window.setTimeout(function () {
+        confirmPanel.hidden = true;
+        confirmPanel.classList.remove('is-confirmed');
+        confirmResult.hidden = true;
+        confirmActions.hidden = false;
+        dangerInput.value = '';
+        dangerDelete.disabled = true;
+      }, 3000);
     });
 
     append(grid, leftColumn, rightColumn);

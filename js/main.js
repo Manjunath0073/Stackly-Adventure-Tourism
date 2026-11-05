@@ -480,9 +480,13 @@
   document.querySelectorAll('[data-newsletter]').forEach(function (form) {
     const email = form.querySelector('input[type="email"]');
     const message = form.querySelector('.newsletter__message');
+    const defaultMessage = message ? message.textContent : '';
+    let messageTimer = 0;
+
     form.addEventListener('submit', function (event) {
       event.preventDefault();
       if (!email || !message) return;
+      if (messageTimer) window.clearTimeout(messageTimer);
       message.classList.remove('is-success', 'is-error');
       if (!email.value.trim() || !email.checkValidity()) {
         message.textContent = 'Enter a valid email address to continue.';
@@ -496,14 +500,25 @@
       message.textContent = 'Thanks — your email is ready. This demo did not send or store it.';
       message.classList.add('is-success');
       form.reset();
+      messageTimer = window.setTimeout(function () {
+        message.classList.remove('is-success');
+        message.textContent = defaultMessage;
+        messageTimer = 0;
+      }, 3000);
     });
     if (email) {
       email.addEventListener('input', function () {
+        if (messageTimer) {
+          window.clearTimeout(messageTimer);
+          messageTimer = 0;
+          message.classList.remove('is-success');
+          message.textContent = defaultMessage;
+        }
         if (email.validity.valid) {
           email.removeAttribute('aria-invalid');
           if (message && message.classList.contains('is-error')) {
             message.classList.remove('is-error');
-            message.textContent = 'No backend connected. This form demonstrates the sign-up flow.';
+            message.textContent = defaultMessage;
           }
         }
       });
