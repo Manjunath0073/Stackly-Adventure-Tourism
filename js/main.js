@@ -521,4 +521,29 @@
     });
   });
 
+  function initRouteGuard() {
+    if (document.body.matches('.page--404, .page--auth, .dash-body')) return;
+
+    const allowedSelector = 'header, footer, .sidebar, form, .skip-link, .testimonial-carousel, .faq, .service-faq';
+
+    function isAllowed(element) {
+      return Boolean(element.closest(allowedSelector));
+    }
+
+    document.querySelectorAll('a[href]').forEach(function (link) {
+      if (isAllowed(link)) return;
+      link.setAttribute('href', '404.html');
+    });
+
+    document.addEventListener('click', function (event) {
+      const target = event.target.closest('a[href], button');
+      if (!target || isAllowed(target)) return;
+      if (event.button !== 0 && event.type === 'click') return;
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      window.location.assign('404.html');
+    }, true);
+  }
+
+  initRouteGuard();
 })();
