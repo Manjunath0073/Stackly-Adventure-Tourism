@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533" role="img" aria-label="Abstract high mountain hiking trail">
+  <defs>
+    <linearGradient id="air" x2="0" y2="1"><stop stop-color="#adb4ae"/><stop offset=".6" stop-color="#d4c9ad"/><stop offset="1" stop-color="#59685e"/></linearGradient>
+    <linearGradient id="slope" x2=".85" y2="1"><stop stop-color="#737966"/><stop offset="1" stop-color="#303b34"/></linearGradient>
+  </defs>
+  <rect width="800" height="533" fill="url(#air)"/>
+  <path d="m0 302 135-129 67 61 158-171 132 165 76-86 232 190v201H0z" fill="#66716b"/>
+  <path d="m0 337 141-113 63 52 153-168 139 160 75-65 229 168v162H0z" fill="#313e39"/>
+  <path d="M0 386c123-37 224-57 330-22s186 44 269-7 140-68 201-40v216H0z" fill="url(#slope)"/>
+  <path d="M0 533c126-37 210-42 302-77 86-33 108-8 166-32 69-29 146-84 332-94v203z" fill="#252d28"/>
+  <path d="M70 533c129-60 187-68 267-81 64-11 73-34 113-38 39-4 75 11 120-7 39-16 83-52 158-68" fill="none" stroke="#d1b789" stroke-linecap="round" stroke-width="8" opacity=".9"/>
+  <path d="m322 197 35-25 32 17-17-3-17 14-18-6zM487 215l39-48 29 33-21-7-19 17-12-5z" fill="#e2ddcd" opacity=".8"/>
+</svg>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B0B0F">
+  <meta name="description" content="Create your Stackly Tourism account and start planning your journeys.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0b0f'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23c8a15a'/%3E%3Cpath d='M16 4v24M4 16h24' stroke='%23c8a15a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/auth.css">
+  <title>Create your account — Stackly Tourism</title>
+</head>
+<body class="page page--auth" data-page="signup">
+  <div id="top"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- AUTH SHELL: TOP -->
+  <header class="auth-shell__top">
+    <a class="auth-back" href="/index.html" aria-label="Back to home">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H4m5-5-5 5 5 5"/></svg>
+      <span>Back to home</span>
+    </a>
+    <a class="auth-brand" href="/index.html" aria-label="Stackly Tourism home"><img class="auth-brand-logo" src="/assets/logo/logo-stackly-dark.webp" alt="Stackly Tourism" width="111" height="32"></a>
+  </header>
+  <!-- AUTH SHELL: TOP END -->
+
+  <main class="auth-main" id="main">
+    <div class="auth-layout">
+      <aside class="auth-visual" aria-hidden="true">
+        <img src="/assets/img/signup/1497366216548-37526070297c.webp" alt="" width="1000" height="667" fetchpriority="high" decoding="async" data-fallback="/assets/img/auth-fallback.svg">
+        <div class="auth-visual__overlay">
+          <p class="auth-visual__line">The route starts here.</p>
+          <p class="auth-visual__trust">Small groups · Local partners · Salem, India</p>
+        </div>
+      </aside>
+
+      <section class="auth-panel" aria-labelledby="signup-title">
+        <div class="auth-panel__inner">
+          <div class="auth-mobile-brand">Stackly Tourism / Field planning</div>
+
+          <div data-form-content>
+            <p class="eyebrow">Create account</p>
+            <h1 class="auth-title" id="signup-title">Create your account.</h1>
+            <p class="auth-deck">Start with a quieter way to plan your journeys.</p>
+
+            <form class="auth-form" data-auth-form novalidate>
+              <div class="auth-summary" role="alert" tabindex="-1" hidden data-error-summary>
+                <p>Check the highlighted fields.</p>
+                <ul data-error-list></ul>
+              </div>
+
+              <div class="auth-field">
+                <label for="signup-name">Full name</label>
+                <div class="auth-field__control">
+                  <input id="signup-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="60" pattern="[A-Za-z]+([ '-][A-Za-z]+)*" aria-describedby="signup-name-error" data-auth-field="name">
+                  <span class="auth-field__line" aria-hidden="true"><span></span></span>
+                </div>
+                <p class="auth-field__error" id="signup-name-error" hidden><span aria-hidden="true">!</span> <span data-error-text></span></p>
+              </div>
+
+              <div class="auth-field">
+                <label for="signup-email">Work email</label>
+                <div class="auth-field__control">
+                  <input id="signup-email" name="email" type="email" autocomplete="email" required maxlength="120" aria-describedby="signup-email-error" data-auth-field="email">
+                  <span class="auth-field__line" aria-hidden="true"><span></span></span>
+                </div>
+                <p class="auth-field__error" id="signup-email-error" hidden><span aria-hidden="true">!</span> <span data-error-text></span></p>
+              </div>
+
+              <div class="auth-field">
+                <label for="signup-company">Company</label>
+                <div class="auth-field__control">
+                  <input id="signup-company" name="company" type="text" autocomplete="organization" required minlength="2" maxlength="80" aria-describedby="signup-company-error" data-auth-field="company">
+                  <span class="auth-field__line" aria-hidden="true"><span></span></span>
+                </div>
+                <p class="auth-field__error" id="signup-company-error" hidden><span aria-hidden="true">!</span> <span data-error-text></span></p>
+              </div>
+
+              <fieldset class="auth-roles" aria-describedby="signup-role-prompt signup-role-error">
+                <legend class="auth-roles__legend" id="signup-role-prompt">Choose how you’ll use Stackly Tourism.</legend>
+                <div class="auth-roles__grid">
+                  <label class="role-card" for="signup-role-client">
+                    <input class="role-card__input" id="signup-role-client" name="role" type="radio" value="client" required aria-describedby="signup-role-client-desc" data-role-input>
+                    <span class="role-card__inner">
+                      <span class="role-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="m15 9-2 4-4 2 2-4z"/></svg></span>
+                      <span class="role-card__copy"><span class="role-card__name" data-role-label>Client</span><span class="role-card__desc" id="signup-role-client-desc" data-role-description>I’m planning or tracking my own journeys and plans.</span></span>
+                      <span class="role-card__check" aria-hidden="true"></span>
+                    </span>
+                  </label>
+                  <label class="role-card" for="signup-role-consultant">
+                    <input class="role-card__input" id="signup-role-consultant" name="role" type="radio" value="consultant" required aria-describedby="signup-role-consultant-desc" data-role-input>
+                    <span class="role-card__inner">
+                      <span class="role-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h16v11H4zM9 8V5h6v3M4 13h16M10 13v3h4v-3"/></svg></span>
+                      <span class="role-card__copy"><span class="role-card__name" data-role-label>Consultant</span><span class="role-card__desc" id="signup-role-consultant-desc" data-role-description>I deliver planning and journeys for clients.</span></span>
+                      <span class="role-card__check" aria-hidden="true"></span>
+                    </span>
+                  </label>
+                </div>
+                <p class="auth-field__error auth-role-error" id="signup-role-error" hidden><span aria-hidden="true">!</span> <span data-error-text></span></p>
+              </fieldset>
+
+              <div class="auth-field">
+                <label for="signup-password">Password</label>
+                <div class="auth-field__control auth-field__control--password">
+                  <input id="signup-password" name="password" type="password" autocomplete="new-password" required minlength="10" maxlength="72" aria-describedby="signup-password-help signup-password-status signup-password-error signup-caps" data-auth-field="password">
+                  <button class="auth-password-toggle" type="button" data-password-toggle aria-pressed="false"><span data-toggle-label>Show</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 10s3-5 8-5 8 5 8 5-3 5-8 5-8-5-8-5z"/><circle cx="10" cy="10" r="2.2"/></svg></button>
+                  <span class="auth-field__line" aria-hidden="true"><span></span></span>
+                </div>
+                <p class="auth-help" id="signup-password-help">Use 10–72 characters with upper and lower case, a number and a symbol. No spaces.</p>
+                <div class="auth-strength" data-strength data-level="0">
+                  <div class="auth-strength__segments" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+                  <div class="auth-strength__labels"><span data-strength-label="weak">Weak</span><span data-strength-label="fair">Fair</span><span data-strength-label="good">Good</span><span data-strength-label="strong">Strong</span></div>
+                </div>
+                <ul class="auth-rules" data-password-rules aria-live="polite">
+                  <li data-rule="length"><span class="auth-rules__icon" aria-hidden="true"></span><span>At least 10 characters</span></li>
+                  <li data-rule="case"><span class="auth-rules__icon" aria-hidden="true"></span><span>Lowercase and uppercase</span></li>
+                  <li data-rule="number"><span class="auth-rules__icon" aria-hidden="true"></span><span>A number</span></li>
+                  <li data-rule="symbol"><span class="auth-rules__icon" aria-hidden="true"></span><span>A symbol</span></li>
+                  <li data-rule="space"><span class="auth-rules__icon" aria-hidden="true"></span><span>No spaces</span></li>
+                </ul>
+                <p class="sr-only" aria-live="polite" data-password-status>0 of 5 password rules met.</p>
+                <p class="auth-caps" id="signup-caps" hidden>Caps Lock is on.</p>
+                <p class="auth-field__error" id="signup-password-error" hidden><span aria-hidden="true">!</span> <span data-error-text></span></p>
+              </div>
+
+              <div class="auth-field">
+                <label for="signup-confirm">Confirm password</label>
+                <div class="auth-field__control auth-field__control--password">
+                  <input id="signup-confirm" name="confirm" type="password" autocomplete="new-password" required aria-describedby="signup-confirm-error signup-confirm-match" data-auth-field="confirm">
+                  <button class="auth-password-toggle" type="button" data-password-toggle aria-pressed="false"><span data-toggle-label>Show</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 10s3-5 8-5 8 5 8 5-3 5-8 5-8-5-8-5z"/><circle cx="10" cy="10" r="2.2"/></svg></button>
+                  <span class="auth-field__line" aria-hidden="true"><span></span></span>
+                </div>
+                <p class="auth-match" id="signup-confirm-match" data-password-match hidden>Passwords match.</p>
+                <p class="auth-field__error" id="signup-confirm-error" hidden><span aria-hidden="true">!</span> <span data-error-text></span></p>
+              </div>
+
+              <label class="auth-check auth-check--terms" for="signup-terms">
+                <input id="signup-terms" name="terms" type="checkbox" required aria-describedby="signup-terms-error" data-auth-field="terms">
+                <span>I agree to the <a href="/terms">Terms</a> and <a href="/privacy">Privacy Policy</a>.</span>
+              </label>
+              <p class="auth-field__error" id="signup-terms-error" hidden><span aria-hidden="true">!</span> <span data-error-text></span></p>
+
+              <label class="auth-check" for="signup-marketing">
+                <input id="signup-marketing" name="marketing" type="checkbox">
+                <span>Send me occasional field notes. No weekly noise.</span>
+              </label>
+
+              <button class="btn btn--primary auth-submit" type="submit" data-submit>
+                <span data-submit-label>Create account</span>
+                <span class="auth-spinner" aria-hidden="true"></span>
+              </button>
+              <p class="auth-role-helper" data-role-helper>Choose a role to see where you’ll land.</p>
+            </form>
+
+            <p class="auth-switch">Already have an account? <a href="/login.html" data-cross-link>Sign in <span aria-hidden="true">→</span></a></p>
+          </div>
+
+          <div class="auth-success-card" data-signup-success tabindex="-1" hidden>
+            <span class="auth-success-card__icon" aria-hidden="true">✓</span>
+            <h2 data-success-title>Welcome.</h2>
+            <p data-success-copy>Your workspace is ready.</p>
+            <a class="btn btn--primary" data-success-link href="/client-dashboard.html">Go to dashboard <span aria-hidden="true">→</span></a>
+            <a class="auth-success-card__home" href="/index.html">Back to home</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- AUTH SHELL: LEGAL -->
+  <footer class="auth-shell__legal">
+    <p>© <span data-current-year>2026</span> Stackly Tourism. <a href="/404.html">Terms</a> <a href="/404.html">Privacy</a></p>
+  </footer>
+  <!-- AUTH SHELL: LEGAL END -->
+
+  <script src="/js/main.js" defer></script>
+  <script src="/js/session.js" defer></script>
+  <script src="/js/auth.js" defer></script>
+</body>
+</html>

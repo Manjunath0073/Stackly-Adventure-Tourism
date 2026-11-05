@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Abstract Stackly landscape placeholder">
+  <defs>
+    <linearGradient id="about-sky" x2="0" y2="1">
+      <stop stop-color="#d8d1c1"/>
+      <stop offset=".52" stop-color="#b8b09f"/>
+      <stop offset="1" stop-color="#4a5148"/>
+    </linearGradient>
+    <linearGradient id="about-ridge" x2="0" y2="1">
+      <stop stop-color="#6c7368"/>
+      <stop offset="1" stop-color="#29322e"/>
+    </linearGradient>
+    <linearGradient id="about-front" x2=".8" y2="1">
+      <stop stop-color="#465046"/>
+      <stop offset="1" stop-color="#141a18"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#about-sky)"/>
+  <circle cx="885" cy="184" r="66" fill="#e5d6b5" opacity=".55"/>
+  <path d="m0 476 161-174 103 92 182-233 139 169 105-119 173 188 158-111 179 124v388H0z" fill="#8c9184" opacity=".62"/>
+  <path d="m0 530 176-136 115 84 182-213 147 170 97-93 157 151 169-86 157 100v293H0z" fill="url(#about-ridge)"/>
+  <path d="m0 607 188-112 137 76 159-108 151 114 122-87 219 105 224-61v266H0z" fill="url(#about-front)"/>
+  <path d="M0 704c152-30 249 15 385-1s259-42 403-12 252 7 412-11v120H0z" fill="#101512" opacity=".78"/>
+  <path d="M84 600c106-37 174-24 245-6M910 563c70-21 132-20 199-6" fill="none" stroke="#d7c6a4" stroke-linecap="round" stroke-opacity=".35" stroke-width="2"/>
+  <g fill="none" stroke="#c8a15a" stroke-opacity=".36" stroke-width="1.5">
+    <path d="M0 342c96-53 149-28 217-50s105-60 190-54 109 41 184 15 132-51 233-17 201 17 376-31"/>
+    <path d="M0 376c104-42 156-22 228-44s99-51 177-47 118 40 196 19 142-46 231-16 188 14 368-30"/>
+    <path d="M0 410c109-34 167-16 239-36s104-43 177-38 119 35 197 18 142-37 230-10 185 10 357-24"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Abstract Zstackly contact placeholder">
+  <defs>
+    <linearGradient id="contact-bg" x2=".8" y2="1">
+      <stop stop-color="#3a423b"/>
+      <stop offset=".5" stop-color="#8d8879"/>
+      <stop offset="1" stop-color="#161d19"/>
+    </linearGradient>
+    <linearGradient id="contact-glow" x2="0" y2="1">
+      <stop stop-color="#c8a15a" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#c8a15a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#contact-bg)"/>
+  <circle cx="880" cy="220" r="250" fill="url(#contact-glow)"/>
+  <g fill="none" stroke="#f4f1ea" stroke-opacity=".16" stroke-width="1.5">
+    <path d="M-40 640c150-91 243-38 338-104s128-145 241-139 160 99 260 56 203-106 441-151"/>
+    <path d="M-40 684c158-85 250-34 348-99s131-133 240-127 163 91 263 52 207-99 429-143"/>
+    <path d="M-40 728c166-79 257-30 358-95s134-121 239-115 166 83 266 48 211-91 417-135"/>
+  </g>
+  <path d="M96 650c142-81 208-29 292-92s112-139 221-151 177 81 278 45 171-100 245-136" fill="none" stroke="#c8a15a" stroke-dasharray="8 10" stroke-linecap="round" stroke-width="3"/>
+  <g fill="#c8a15a">
+    <circle cx="96" cy="650" r="7"/>
+    <circle cx="1132" cy="316" r="7"/>
+  </g>
+  <path d="m0 748 160-86 121 52 139-84 148 94 128-68 204 86 300-70v128H0z" fill="#0d1210" opacity=".7"/>
+</svg>

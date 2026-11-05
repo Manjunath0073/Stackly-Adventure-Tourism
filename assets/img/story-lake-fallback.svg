@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 560" role="img" aria-label="Abstract mountain lake at dawn">
+  <defs>
+    <linearGradient id="dawn" x2="0" y2="1"><stop stop-color="#bdb9a5"/><stop offset=".53" stop-color="#e2d6ba"/><stop offset=".54" stop-color="#6f8079"/><stop offset="1" stop-color="#253f40"/></linearGradient>
+    <linearGradient id="lake" x2="0" y2="1"><stop stop-color="#617977"/><stop offset="1" stop-color="#263d40"/></linearGradient>
+  </defs>
+  <rect width="840" height="560" fill="url(#dawn)"/>
+  <path d="m0 284 139-139 81 76L360 72l100 127 80-72 145 157 155-112v148H0z" fill="#747b70"/>
+  <path d="m0 312 144-114 87 67 123-119 106 133 82-66 136 103 162-91v65H0z" fill="#394d48"/>
+  <path d="M0 339h840v221H0z" fill="url(#lake)"/>
+  <path d="m360 338 100 0 65 222H307z" fill="#9ba89a" opacity=".22"/>
+  <path d="M0 382c154 17 269-13 408 2s270 12 432-5M0 431c167-13 285 18 438 3s267-16 402 1M0 493c170 12 302-11 435-1s286 17 405 0" fill="none" stroke="#d4c7a7" stroke-opacity=".24" stroke-width="3"/>
+  <path d="M0 320c72-10 126-4 186 4l-41 41H0zM633 333c69-21 134-19 207-6v56H650z" fill="#202c2a"/>
+</svg>

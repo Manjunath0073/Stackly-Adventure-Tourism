@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-label="Abstract layered alpine landscape">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#aeb1a1"/><stop offset=".58" stop-color="#d1c3a6"/><stop offset="1" stop-color="#657064"/></linearGradient>
+    <linearGradient id="ridge" x2="0" y2="1"><stop stop-color="#5b6259"/><stop offset="1" stop-color="#252c29"/></linearGradient>
+    <linearGradient id="front" x2="0" y2="1"><stop stop-color="#38433e"/><stop offset="1" stop-color="#171c1c"/></linearGradient>
+  </defs>
+  <rect width="960" height="640" fill="url(#sky)"/>
+  <circle cx="730" cy="154" r="58" fill="#e6d4ad" opacity=".7"/>
+  <path d="m0 380 166-166 85 96 173-203 126 145 79-85 177 169 154-91v395H0z" fill="#858c7e" opacity=".75"/>
+  <path d="m0 427 145-119 121 74 172-191 122 134 104-94 146 136 150-76v349H0z" fill="url(#ridge)"/>
+  <path d="m0 496 178-110 139 78 142-111 145 119 132-93 224 102v159H0z" fill="url(#front)"/>
+  <path d="m317 382 121-192 58 63-40-17-29 55-25-13-32 53zM611 351l53-66 60 56-42-15-21 18-24-8z" fill="#e3decd" opacity=".75"/>
+  <path d="M0 562c173-29 278 11 425-9s340-52 535-3v90H0z" fill="#202925" opacity=".8"/>
+</svg>

@@ -1,0 +1,246 @@
+/* PAGE: 404 — the route runs out. */
+
+.page--404 {
+  background: var(--ink);
+}
+
+.error-section {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  min-height: 100svh;
+  align-items: center;
+  overflow: hidden;
+  padding: clamp(112px, 15vh, 156px) 0 clamp(48px, 7vh, 76px);
+}
+
+.error-container {
+  position: relative;
+  width: min(100% - (var(--gutter) * 2), 1120px);
+  margin-inline: auto;
+}
+
+.error-poster {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-top: clamp(8px, 2vh, 18px);
+  text-align: center;
+}
+
+.error-route {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.error-route__path {
+  stroke: var(--accent);
+  stroke-width: 1.25;
+  stroke-linecap: round;
+  stroke-dasharray: 6 9;
+  opacity: .6;
+}
+
+.error-route__reveal {
+  transition: stroke-dashoffset 1200ms var(--ease-out);
+}
+
+.error-content {
+  position: relative;
+  z-index: 1;
+}
+
+.error-overline {
+  justify-content: center;
+  color: #b2aca0;
+  letter-spacing: .17em;
+}
+
+.error-overline .eyebrow__dot {
+  background: var(--accent);
+}
+
+.error-numerals {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin: clamp(16px, 3vh, 30px) auto 0;
+}
+
+.error-number {
+  display: block;
+  color: var(--bone);
+  font-family: var(--font-display);
+  font-size: clamp(96px, 17vw, 220px);
+  font-weight: 400;
+  letter-spacing: -.075em;
+  line-height: .78;
+  white-space: nowrap;
+}
+
+html.js .error-number {
+  animation: error-numeral-in 760ms 100ms var(--ease-out) both;
+}
+
+.error-rule {
+  display: block;
+  width: min(240px, 42vw);
+  height: 1px;
+  margin: clamp(16px, 2.4vh, 24px) auto 0;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
+.error-route__dot {
+  position: absolute;
+  right: -18px;
+  bottom: 11%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgb(200 161 90 / 12%);
+}
+
+.error-copy {
+  max-width: 560px;
+  margin: clamp(18px, 3vh, 28px) auto 0;
+  color: #d8d1c4;
+  font-size: clamp(1rem, 1.15vw, 1.14rem);
+  line-height: 1.65;
+}
+
+.error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: clamp(22px, 3.4vh, 34px);
+}
+
+.error-action {
+  min-width: 194px;
+  padding-inline: 26px;
+}
+
+.error-action--back {
+  border: 1px solid rgb(244 241 234 / 26%);
+  background: transparent;
+  color: var(--bone);
+}
+
+.error-action--back:hover {
+  border-color: var(--accent);
+  background: rgb(200 161 90 / 8%);
+  color: var(--bone);
+}
+
+.error-popular {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 9px 18px;
+  margin-top: clamp(22px, 3.6vh, 36px);
+}
+
+.error-popular__label {
+  color: #9a9487;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.error-popular__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 7px 18px;
+}
+
+.error-popular__links a {
+  padding-block: 3px;
+  border-bottom: 1px solid transparent;
+  color: #d8d1c4;
+  font-size: 12px;
+  transition: color var(--duration-1) ease, border-color var(--duration-1) ease;
+}
+
+.error-popular__links a:hover {
+  border-bottom-color: var(--accent);
+  color: var(--bone);
+}
+
+@keyframes error-numeral-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 599px) {
+  .error-section {
+    padding-top: 104px;
+    padding-bottom: 40px;
+  }
+
+  .error-container {
+    width: min(100% - 32px, 1120px);
+  }
+
+  .error-number {
+    font-size: clamp(96px, 25vw, 128px);
+  }
+
+  .error-route__dot {
+    right: -11px;
+  }
+
+  .error-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .error-action {
+    width: 100%;
+  }
+
+  .error-popular {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .error-popular__links {
+    gap: 8px 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js .error-number {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .error-route__reveal {
+    transition: none !important;
+  }
+
+  .error-popular__links a {
+    transition: none;
+  }
+}

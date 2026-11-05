@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B0B0F">
+  <meta name="description" content="Sign in to your Stackly Tourism workspace.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0b0f'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23c8a15a'/%3E%3Cpath d='M16 4v24M4 16h24' stroke='%23c8a15a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/auth.css">
+  <title>Sign in — Stackly Tourism</title>
+</head>
+<body class="page page--auth" data-page="login">
+  <div id="top"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- AUTH SHELL: TOP -->
+  <header class="auth-shell__top">
+    <a class="auth-back" href="/index.html" aria-label="Back to home">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H4m5-5-5 5 5 5"/></svg>
+      <span>Back to home</span>
+    </a>
+    <a class="auth-brand" href="/index.html" aria-label="Stackly Tourism home"><img class="auth-brand-logo" src="/assets/logo/logo-stackly-dark.webp" alt="Stackly Tourism" width="111" height="32"></a>
+  </header>
+  <!-- AUTH SHELL: TOP END -->
+
+  <main class="auth-main" id="main">
+    <div class="auth-layout">
+      <aside class="auth-visual" aria-hidden="true">
+        <img src="/assets/img/login/1487958449943-2429e8be8625.webp" alt="" width="1000" height="667" fetchpriority="high" decoding="async" data-fallback="/assets/img/auth-fallback.svg">
+        <div class="auth-visual__overlay">
+          <p class="auth-visual__line">The route starts here.</p>
+          <p class="auth-visual__trust">Small groups · Local partners · Salem, India</p>
+        </div>
+      </aside>
+
+      <section class="auth-panel" aria-labelledby="login-title">
+        <div class="auth-panel__inner">
+          <div class="auth-mobile-brand">Stackly Tourism / Field planning</div>
+
+          <div data-form-content>
+            <p class="eyebrow">Sign in</p>
+            <h1 class="auth-title" id="login-title">Welcome back.</h1>
+            <p class="auth-deck">Sign in to your Stackly Tourism workspace.</p>
+
+            <div class="auth-alert" role="alert" aria-live="assertive" data-auth-alert hidden></div>
+            <div class="auth-success-banner" role="status" aria-live="polite" data-auth-success hidden></div>
+
+            <form class="auth-form" data-auth-form novalidate>
+              <div class="auth-summary" role="alert" tabindex="-1" hidden data-error-summary>
+                <p>Check the highlighted fields.</p>
+                <ul data-error-list></ul>
+              </div>
+
+              <div class="auth-field">
+                <label for="login-email">Work email</label>
+                <div class="auth-field__control">
+                  <input id="login-email" name="email" type="email" autocomplete="username" required aria-describedby="login-email-error" data-auth-field="email">
+                  <span class="auth-field__line" aria-hidden="true"><span></span></span>
+                </div>
+                <p class="auth-field__error" id="login-email-error" hidden><span aria-hidden="true">!</span> <span data-error-text></span></p>
+              </div>
+
+              <div class="auth-field">
+                <div class="auth-field__label-row">
+                  <label for="login-password">Password</label>
+                  <a class="auth-forgot" href="/forgot-password">Forgot password?</a>
+                </div>
+                <div class="auth-field__control auth-field__control--password">
+                  <input id="login-password" name="password" type="password" autocomplete="current-password" required minlength="10" maxlength="72" aria-describedby="login-password-help login-password-error login-caps" data-auth-field="password">
+                  <button class="auth-password-toggle" type="button" data-password-toggle aria-pressed="false"><span data-toggle-label>Show</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 10s3-5 8-5 8 5 8 5-3 5-8 5-8-5-8-5z"/><circle cx="10" cy="10" r="2.2"/></svg></button>
+                  <span class="auth-field__line" aria-hidden="true"><span></span></span>
+                </div>
+                <p class="auth-help" id="login-password-help">Use 10–72 characters with upper and lower case, a number and a symbol. No spaces.</p>
+                <p class="auth-caps" id="login-caps" hidden>Caps Lock is on.</p>
+                <p class="auth-field__error" id="login-password-error" hidden><span aria-hidden="true">!</span> <span data-error-text></span></p>
+              </div>
+
+              <fieldset class="auth-roles" aria-describedby="login-role-prompt login-role-error">
+                <legend class="auth-roles__legend" id="login-role-prompt">Choose your workspace.</legend>
+                <div class="auth-roles__grid">
+                  <label class="role-card" for="login-role-client">
+                    <input class="role-card__input" id="login-role-client" name="role" type="radio" value="client" required aria-describedby="login-role-client-desc" data-role-input>
+                    <span class="role-card__inner">
+                      <span class="role-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="m15 9-2 4-4 2 2-4z"/></svg></span>
+                      <span class="role-card__copy"><span class="role-card__name" data-role-label>Client</span><span class="role-card__desc" id="login-role-client-desc" data-role-description>I’m planning or tracking my own journeys and plans.</span></span>
+                      <span class="role-card__check" aria-hidden="true"></span>
+                    </span>
+                  </label>
+                  <label class="role-card" for="login-role-consultant">
+                    <input class="role-card__input" id="login-role-consultant" name="role" type="radio" value="consultant" required aria-describedby="login-role-consultant-desc" data-role-input>
+                    <span class="role-card__inner">
+                      <span class="role-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h16v11H4zM9 8V5h6v3M4 13h16M10 13v3h4v-3"/></svg></span>
+                      <span class="role-card__copy"><span class="role-card__name" data-role-label>Consultant</span><span class="role-card__desc" id="login-role-consultant-desc" data-role-description>I deliver planning and journeys for clients.</span></span>
+                      <span class="role-card__check" aria-hidden="true"></span>
+                    </span>
+                  </label>
+                </div>
+                <p class="auth-field__error auth-role-error" id="login-role-error" hidden><span aria-hidden="true">!</span> <span data-error-text></span></p>
+              </fieldset>
+
+              <label class="auth-check" for="login-remember">
+                <input id="login-remember" name="remember" type="checkbox">
+                <span>Remember me on this device</span>
+              </label>
+
+              <button class="btn btn--primary auth-submit" type="submit" data-submit>
+                <span data-submit-label>Sign in</span>
+                <span class="auth-spinner" aria-hidden="true"></span>
+              </button>
+              <p class="auth-role-helper" data-role-helper>Choose a role to see where you’ll land.</p>
+            </form>
+
+            <p class="auth-switch">New here? <a href="/signup.html" data-cross-link>Create an account <span aria-hidden="true">→</span></a></p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- AUTH SHELL: LEGAL -->
+  <footer class="auth-shell__legal">
+    <p>© <span data-current-year>2026</span> Stackly Tourism. <a href="/404.html">Terms</a> <a href="/404.html">Privacy</a></p>
+  </footer>
+  <!-- AUTH SHELL: LEGAL END -->
+
+  <script src="/js/main.js" defer></script>
+  <script src="/js/session.js" defer></script>
+  <script src="/js/auth.js" defer></script>
+</body>
+</html>

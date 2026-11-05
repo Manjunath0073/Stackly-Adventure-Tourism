@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Abstract Stackly planning placeholder">
+  <defs>
+    <linearGradient id="plan-bg" x2=".8" y2="1">
+      <stop stop-color="#1d2421"/>
+      <stop offset=".48" stop-color="#6f766b"/>
+      <stop offset="1" stop-color="#111714"/>
+    </linearGradient>
+    <linearGradient id="plan-glow" x2="0" y2="1">
+      <stop stop-color="#c8a15a" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#c8a15a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#plan-bg)"/>
+  <circle cx="850" cy="210" r="260" fill="url(#plan-glow)"/>
+  <g fill="none" stroke="#f4f1ea" stroke-opacity=".18" stroke-width="1.5">
+    <path d="M70 164h1060M70 288h1060M70 412h1060M70 536h1060M70 660h1060"/>
+    <path d="M190 110v620M370 110v620M550 110v620M730 110v620M910 110v620M1090 110v620"/>
+  </g>
+  <g fill="none" stroke="#c8a15a" stroke-width="6" stroke-linecap="round">
+    <path d="M100 230h210"/>
+    <path d="M250 354h330"/>
+    <path d="M430 478h380"/>
+    <path d="M650 602h330"/>
+  </g>
+  <g fill="#c8a15a">
+    <path d="m340 218 12 12-12 12-12-12z"/>
+    <path d="m610 342 12 12-12 12-12-12z"/>
+    <path d="m840 466 12 12-12 12-12-12z"/>
+    <path d="m1010 590 12 12-12 12-12-12z"/>
+  </g>
+  <path d="m0 742 170-80 124 50 141-76 147 88 132-63 199 80 287-66v125H0z" fill="#0b100e" opacity=".68"/>
+</svg>

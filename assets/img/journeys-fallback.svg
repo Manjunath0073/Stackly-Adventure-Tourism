@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Abstract Stackly journey placeholder">
+  <defs>
+    <linearGradient id="journey-bg" x2=".8" y2="1">
+      <stop stop-color="#39423b"/>
+      <stop offset=".48" stop-color="#8f8877"/>
+      <stop offset="1" stop-color="#18201c"/>
+    </linearGradient>
+    <linearGradient id="journey-glow" x2="0" y2="1">
+      <stop stop-color="#e5c486" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#e5c486" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#journey-bg)"/>
+  <circle cx="780" cy="238" r="250" fill="url(#journey-glow)"/>
+  <g fill="none" stroke="#f4f1ea" stroke-opacity=".16" stroke-width="1.5">
+    <path d="M-40 640c126-80 218-47 306-113s127-137 235-132 155 92 253 54 200-102 446-144"/>
+    <path d="M-40 684c139-75 229-41 321-106s128-126 234-121 158 84 257 50 205-95 428-137"/>
+    <path d="M-40 728c150-70 239-35 336-100s129-115 232-110 161 76 260 46 209-87 412-130"/>
+  </g>
+  <path d="M94 662c142-83 204-26 288-91s105-147 215-161 181 72 281 32 169-98 253-137" fill="none" stroke="#c8a15a" stroke-dasharray="8 10" stroke-linecap="round" stroke-width="3"/>
+  <g fill="#c8a15a">
+    <circle cx="94" cy="662" r="7"/>
+    <circle cx="1131" cy="305" r="7"/>
+  </g>
+  <path d="m0 748 160-86 121 52 139-84 148 94 128-68 204 86 300-70v128H0z" fill="#0d1210" opacity=".7"/>
+</svg>

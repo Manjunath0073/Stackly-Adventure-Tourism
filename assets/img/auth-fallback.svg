@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" role="img" aria-label="Abstract Stackly auth placeholder">
+  <defs>
+    <linearGradient id="auth-bg" x2=".8" y2="1">
+      <stop stop-color="#2e3732"/>
+      <stop offset=".52" stop-color="#8a8475"/>
+      <stop offset="1" stop-color="#141b17"/>
+    </linearGradient>
+    <linearGradient id="auth-glow" x2="0" y2="1">
+      <stop stop-color="#c8a15a" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#c8a15a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1200" fill="url(#auth-bg)"/>
+  <circle cx="700" cy="290" r="300" fill="url(#auth-glow)"/>
+  <g fill="none" stroke="#f4f1ea" stroke-opacity=".16" stroke-width="1.5">
+    <path d="M-40 930c130-79 212-37 300-98s126-140 235-134 157 93 254 54 203-101 291-127"/>
+    <path d="M-40 978c139-73 222-33 313-94s128-128 233-122 160 85 258 50 207-95 296-121"/>
+    <path d="M-40 1026c148-68 232-29 326-90s131-116 231-110 163 77 262 46 211-88 301-114"/>
+  </g>
+  <path d="M80 912c138-80 202-26 286-88s108-135 217-147 178 78 280 42 166-97 237-131" fill="none" stroke="#c8a15a" stroke-dasharray="8 10" stroke-linecap="round" stroke-width="3"/>
+  <g fill="#c8a15a">
+    <circle cx="80" cy="912" r="7"/>
+    <circle cx="1100" cy="588" r="7"/>
+  </g>
+  <path d="m0 1108 160-80 121 48 139-78 148 88 128-63 204 80 300-66v163H0z" fill="#0b100e" opacity=".7"/>
+</svg>

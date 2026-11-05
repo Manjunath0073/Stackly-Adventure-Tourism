@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B0B0F">
+  <meta name="description" content="Stackly Tourism client workspace — journeys, planning, reports, documents and messages.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0b0f'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23c8a15a'/%3E%3Cpath d='M16 4v24M4 16h24' stroke='%23c8a15a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/dashboard.css">
+  <title>Overview — Stackly Tourism Client</title>
+
+  <script src="/js/session.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      document.documentElement.classList.add('js');
+      if (!window.StacklySession) return;
+
+      var demoRequested = new URLSearchParams(window.location.search).get('demo') === '1';
+      if (demoRequested && !window.StacklySession.getSession()) {
+        console.warn('[Stackly] Demo session seeded because ?demo=1 was present. Data is illustrative only.');
+        window.StacklySession.setSession({
+          name: 'Demo Client',
+          email: 'demo.client@stackly.example',
+          company: 'Demo Workspace',
+          role: 'client',
+          createdAt: new Date().toISOString()
+        });
+      }
+
+      if (!window.StacklySession.requireRole('client')) {
+        document.documentElement.classList.add('is-leaving');
+      }
+    })();
+  </script>
+</head>
+<body class="dash-body">
+  <a class="skip-link" href="#main">Skip to workspace content</a>
+
+  <div class="app" id="app" hidden>
+    <aside class="sidebar" id="sidebar" aria-label="Workspace sidebar">
+      <div class="sidebar__head">
+        <a class="brand" href="/index.html" aria-label="Stackly Tourism client workspace, overview">
+          <span class="brand__type">
+            <img class="brand__logo" src="/assets/logo/logo-stackly.webp" alt="Stackly Tourism" width="118" height="34">
+            <span class="brand__sub">Client workspace</span>
+          </span>
+        </a>
+        <button class="icon-button sidebar__close" type="button" data-drawer-close aria-label="Close navigation">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg>
+        </button>
+      </div>
+
+      <nav class="side-nav" aria-label="Workspace">
+        <p class="side-nav__heading">Workspace</p>
+        <ul class="side-nav__list">
+          <li>
+            <a class="side-link" href="#/overview" data-route="overview" data-tip="Overview" aria-label="Overview">
+              <span class="side-link__icon" aria-hidden="true"><svg viewBox="0 0 20 20"><rect x="2.5" y="2.5" width="6" height="6"/><rect x="11.5" y="2.5" width="6" height="6"/><rect x="2.5" y="11.5" width="6" height="6"/><rect x="11.5" y="11.5" width="6" height="6"/></svg></span>
+              <span class="side-link__text">Overview</span>
+            </a>
+          </li>
+          <li>
+            <a class="side-link" href="#/journeys" data-route="journeys" data-tip="Journeys" aria-label="Journeys">
+              <span class="side-link__icon" aria-hidden="true"><svg viewBox="0 0 20 20"><circle cx="4.5" cy="15.5" r="2"/><circle cx="15.5" cy="4.5" r="2"/><path d="M6 14c2.5-1.5 1.5-4 4-5.5S14 8 14 6"/></svg></span>
+              <span class="side-link__text">Journeys</span>
+              <span class="side-link__badge" data-nav-badge="journeys">8</span>
+            </a>
+          </li>
+          <li>
+            <a class="side-link" href="#/planning" data-route="planning" data-tip="Planning" aria-label="Planning">
+              <span class="side-link__icon" aria-hidden="true"><svg viewBox="0 0 20 20"><rect x="2.5" y="4.5" width="15" height="12"/><path d="M2.5 8.5h15M6 2.5v4M14 2.5v4M6 12h3M11 12h3"/></svg></span>
+              <span class="side-link__text">Planning</span>
+            </a>
+          </li>
+          <li>
+            <a class="side-link" href="#/reports" data-route="reports" data-tip="Reports" aria-label="Reports">
+              <span class="side-link__icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M3 17V3M3 17h14M6 14V9M10 14V5M14 14v-3M18 14V7"/></svg></span>
+              <span class="side-link__text">Reports</span>
+            </a>
+          </li>
+          <li>
+            <a class="side-link" href="#/documents" data-route="documents" data-tip="Documents" aria-label="Documents">
+              <span class="side-link__icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M5 2.5h7l3 3v12H5z"/><path d="M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3"/></svg></span>
+              <span class="side-link__text">Documents</span>
+              <span class="side-link__badge" data-nav-badge="documents">2</span>
+            </a>
+          </li>
+          <li>
+            <a class="side-link" href="#/messages" data-route="messages" data-tip="Messages" aria-label="Messages">
+              <span class="side-link__icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M3 4.5h14v9H9l-4 3v-3H3z"/><path d="M6 8h8M6 10.5h5"/></svg></span>
+              <span class="side-link__text">Messages</span>
+              <span class="side-link__badge" data-nav-badge="messages">2</span>
+            </a>
+          </li>
+          <li>
+            <a class="side-link" href="#/settings" data-route="settings" data-tip="Settings" aria-label="Settings">
+              <span class="side-link__icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M3 5h7M14 5h3M3 10h3M10 10h7M3 15h7M14 15h3"/><circle cx="12" cy="5" r="2"/><circle cx="8" cy="10" r="2"/><circle cx="12" cy="15" r="2"/></svg></span>
+              <span class="side-link__text">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar__bottom">
+        <div class="plan-block">
+          <div class="plan-block__row">
+            <span class="status-pill status-pill--success"><span class="status-pill__dot" aria-hidden="true"></span>Field plan active</span>
+            <span class="demo-flag" data-demo-flag hidden>Demo</span>
+          </div>
+          <p>Renews 18 Jan 2027</p>
+        </div>
+        <a class="user-block" href="#/settings" data-user-link aria-label="Open account settings">
+          <span class="avatar avatar--sidebar" data-user-avatar aria-hidden="true">NC</span>
+          <span class="user-block__copy">
+            <span class="user-block__name" data-user-name>Stackly Tourism Client</span>
+            <span class="user-block__company" data-user-company>Client workspace</span>
+          </span>
+          <svg class="user-block__chevron" viewBox="0 0 20 20" aria-hidden="true"><path d="m8 5 5 5-5 5"/></svg>
+        </a>
+      </div>
+    </aside>
+
+    <button class="drawer-backdrop" type="button" data-drawer-backdrop aria-label="Close navigation" tabindex="-1"></button>
+
+    <div class="app__column">
+      <header class="topbar">
+        <button class="icon-button topbar__menu" type="button" data-drawer-open aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
+        </button>
+
+        <div class="crumb">
+          <span class="crumb__root">Workspace</span>
+          <span class="crumb__sep" aria-hidden="true">/</span>
+          <span class="crumb__current" data-view-title>Overview</span>
+        </div>
+
+        <div class="topbar__search">
+          <label class="sr-only" for="workspace-search">Search the current workspace view</label>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg>
+          <input id="workspace-search" type="search" autocomplete="off" spellcheck="false" placeholder="Search journeys, documents, messages" aria-keyshortcuts="/">
+          <span class="topbar__search-hint" aria-hidden="true">/</span>
+        </div>
+
+        <div class="topbar__actions">
+          <div class="popover-anchor">
+            <button class="icon-button" type="button" data-notif-toggle aria-label="Notifications" aria-haspopup="dialog" aria-expanded="false" aria-controls="notification-panel">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M15.5 13.5H4.5c1-1.2 1.5-2.8 1.5-4.8a4 4 0 0 1 8 0c0 2 .5 3.6 1.5 4.8z"/><path d="M8 16.5a2 2 0 0 0 4 0"/></svg>
+              <span class="icon-badge" data-notif-badge>3</span>
+            </button>
+            <div class="popover popover--notifications" id="notification-panel" role="dialog" aria-label="Notifications" hidden>
+              <div class="popover__head">
+                <h2 class="popover__title">Notifications</h2>
+                <span class="popover__meta" data-notif-count>3 new</span>
+              </div>
+              <div class="notification-list" data-notification-list></div>
+              <p class="popover__empty" data-notif-empty hidden>You’re all caught up. New workspace notes will appear here.</p>
+            </div>
+          </div>
+
+          <span class="topbar__divider" aria-hidden="true"></span>
+
+          <div class="popover-anchor">
+            <button class="avatar-button" type="button" data-user-menu-toggle aria-label="Open account menu" aria-haspopup="menu" aria-expanded="false" aria-controls="user-menu">
+              <span class="avatar" data-topbar-avatar aria-hidden="true">NC</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"/></svg>
+            </button>
+            <div class="popover popover--account" id="user-menu" role="menu" hidden>
+              <div class="account-summary">
+                <span class="avatar" data-menu-avatar aria-hidden="true">NC</span>
+                <span>
+                  <span class="account-summary__name" data-menu-name>Stackly Tourism Client</span>
+                  <span class="account-summary__email" data-menu-email>client@example.com</span>
+                </span>
+              </div>
+              <a class="menu-item" href="#/settings" role="menuitem">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="7" r="3"/><path d="M4 17c.7-3.1 3-4.5 6-4.5s5.3 1.4 6 4.5"/></svg>
+                Profile &amp; settings
+              </a>
+              <a class="menu-item" href="/contact.html" role="menuitem">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="M8 7.7a2.2 2.2 0 1 1 2.8 2.1c-.8.3-.8.8-.8 1.4M10 14.4v.1"/></svg>
+                Help
+              </a>
+              <div class="menu-separator" role="separator"></div>
+              <button class="menu-item menu-item--danger" type="button" data-signout role="menuitem">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 3.5H4v13h4M12 6.5l3.5 3.5L12 13.5M6.5 10h9"/></svg>
+                Sign out
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main" id="main" tabindex="-1">
+        <div class="main__inner" id="view-root"></div>
+        <footer class="app-footer">
+          <span>Stackly Tourism client workspace</span>
+          <span>Data last refreshed 04 Nov 2026, 16:20</span>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <noscript>
+    <p class="noscript">This workspace needs JavaScript to open. Enable JavaScript and reload the page.</p>
+  </noscript>
+
+  <div class="sr-only" id="route-announcer" aria-live="polite" aria-atomic="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="/js/client-data.js" defer></script>
+  <script src="/js/charts.js" defer></script>
+  <script src="/js/dashboard.js" defer></script>
+</body>
+</html>

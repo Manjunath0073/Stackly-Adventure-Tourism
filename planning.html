@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B0B0F">
+  <meta name="description" content="How Stackly turns intent into a dated, resourced, de-risked journey plan: principles, staged execution, scenario modelling, a yearly roadmap and a live plan.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://stacklytourism.example/pricing">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/planning.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Stackly Tourism">
+  <meta property="og:title" content="Planning — Stackly Tourism">
+  <meta property="og:description" content="A dated, resourced, de-risked plan for the journey you actually want to take.">
+  <meta property="og:url" content="https://stacklytourism.example/pricing">
+  <meta property="og:image" content="/assets/img/planning/1473116763249-2faaef81ccda.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Planning — Stackly Tourism">
+  <meta name="twitter:description" content="A dated, resourced, de-risked plan for the journey you actually want to take.">
+  <meta name="twitter:image" content="/assets/img/planning/1473116763249-2faaef81ccda.webp">
+  <title>Planning — Stackly Tourism</title>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://stacklytourism.example/#organization",
+          "name": "Stackly Tourism",
+          "url": "https://stacklytourism.example/",
+          "description": "Small-group journeys for curious travelers, led by local experts into wild places."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://stacklytourism.example/pricing#planning-studio",
+          "name": "Stackly Planning Studio",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "A planning workspace for route design, staged execution, capacity and risk review.",
+          "provider": { "@id": "https://stacklytourism.example/#organization" },
+          "isAccessibleForFree": true,
+          "featureList": [
+            "Staged route planning",
+            "Scenario modelling",
+            "Capacity review",
+            "Risk review",
+            "Readiness checklist"
+          ]
+        }
+      ]
+    }
+  </script>
+</head>
+<body class="page page--planning">
+  <div id="top"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- SHARED:NAV START -->
+  <header class="site-header" id="site-header">
+    <div class="nav" id="primary-navigation">
+      <div class="nav__bar">
+        <a class="nav__brand" href="/index.html" aria-label="Stackly Tourism home"><img class="nav__brand-logo" src="/assets/logo/logo-stackly.webp" alt="Stackly Tourism" width="145" height="42"></a>
+
+        <button class="nav__toggle" type="button" aria-label="Open navigation" aria-controls="nav-panel" aria-expanded="false">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+
+        <div class="nav__panel" id="nav-panel">
+          <nav class="nav__primary" aria-label="Primary navigation">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="/index.html">Home</a></li>
+              <li class="nav__item"><a class="nav__link" href="/about.html">About</a></li>
+              <li class="nav__item"><a class="nav__link" href="/services.html">Services</a></li>
+              <li class="nav__item"><a class="nav__link" href="/journeys.html">Journeys</a></li>
+              <li class="nav__item"><a class="nav__link" href="/planning.html" aria-current="page">Planning</a></li>
+              <li class="nav__item"><a class="nav__link" href="/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <a class="btn btn--primary nav__cta" href="/login.html">Plan a journey <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- SHARED:NAV END -->
+
+  <main id="main">
+    <section class="planning-hero" aria-labelledby="planning-hero-title">
+      <div class="planning-hero__curtain" aria-hidden="true">
+        <div class="planning-hero__half planning-hero__half--left">
+          <img src="/assets/img/planning/1473116763249-2faaef81ccda.webp" alt="A sunset over a calm beach and ocean" width="1200" height="700" fetchpriority="high" decoding="async" data-fallback="/assets/img/planning-fallback.svg">
+        </div>
+        <div class="planning-hero__half planning-hero__half--right">
+          <img src="/assets/img/planning/1473116763249-2faaef81ccda.webp" alt="" width="1200" height="700" decoding="async" data-fallback="/assets/img/planning-fallback.svg">
+        </div>
+      </div>
+
+      <div class="container planning-hero__content">
+        <p class="eyebrow">Planning / From intent to departure</p>
+        <h1 class="planning-hero__title" id="planning-hero-title">Plan the days. <em>Then go.</em></h1>
+        <p class="planning-hero__deck">A dated, resourced, de-risked plan for the journey you actually want to take.</p>
+        <div class="planning-hero__actions">
+          <a class="btn btn--primary" href="/contact">Build a plan <span aria-hidden="true">→</span></a>
+          <a class="btn planning-hero__ghost" href="#principles">See how we plan <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="planning-hero__ticker" aria-hidden="true">
+        <div class="planning-hero__ticker-rule"><span data-ticker-progress></span></div>
+        <ol class="planning-hero__months">
+          <li data-month="1"><span>01</span><i></i></li>
+          <li data-month="2"><span>02</span><i></i></li>
+          <li data-month="3"><span>03</span><i></i></li>
+          <li data-month="4"><span>04</span><i></i></li>
+          <li data-month="5"><span>05</span><i></i></li>
+          <li data-month="6"><span>06</span><i></i></li>
+          <li data-month="7"><span>07</span><i></i></li>
+          <li data-month="8"><span>08</span><i></i></li>
+          <li data-month="9"><span>09</span><i></i></li>
+          <li data-month="10"><span>10</span><i></i></li>
+          <li class="is-current" data-month="11"><span>11</span><i></i></li>
+          <li data-month="12"><span>12</span><i></i></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="planning-principles" id="principles" aria-labelledby="principles-title" data-principles>
+      <div class="container planning-principles__layout">
+        <aside class="planning-principles__label">
+          <p class="eyebrow">How we plan</p>
+          <h2 class="planning-principles__title" id="principles-title">Four principles.<br><em>No mystery.</em></h2>
+          <p>A good plan makes the trade-offs visible before anyone books a flight.</p>
+        </aside>
+
+        <div class="planning-principles__columns">
+          <div class="planning-principles__column">
+            <article class="principle-card" data-principle>
+              <span class="principle-card__index">01</span>
+              <figure class="principle-card__media">
+                <img src="/assets/img/planning/1506784983877-45594efa4cbe.webp" alt="A monthly planner and a cup of coffee on a desk" width="600" height="400" loading="lazy" decoding="async" data-fallback="/assets/img/planning-fallback.svg">
+                <figcaption>Start with the fixed points.</figcaption>
+              </figure>
+              <h3>Define the constraint</h3>
+              <p>A plan starts with what cannot move: dates, budget, access, and the people who have to say yes.</p>
+            </article>
+            <article class="principle-card" data-principle>
+              <span class="principle-card__index">03</span>
+              <figure class="principle-card__media">
+                <img src="/assets/img/planning/1521737711867-e3b97375f902.webp" alt="A small team working around a table in a timber room" width="600" height="400" loading="lazy" decoding="async" data-fallback="/assets/img/planning-fallback.svg">
+                <figcaption>Name the owner, not the intention.</figcaption>
+              </figure>
+              <h3>Price the risk</h3>
+              <p>Weather, permits and guide availability get a named fallback, not a hopeful note in the margin.</p>
+            </article>
+          </div>
+
+          <div class="planning-principles__column planning-principles__column--offset">
+            <article class="principle-card" data-principle>
+              <span class="principle-card__index">02</span>
+              <figure class="principle-card__media">
+                <img src="/assets/img/planning/1454165804606-c3d57bc86b40.webp" alt="Two people planning at a table with laptops and notes" width="600" height="400" loading="lazy" decoding="async" data-fallback="/assets/img/planning-fallback.svg">
+                <figcaption>Long-lead decisions come first.</figcaption>
+              </figure>
+              <h3>Sequence the dependencies</h3>
+              <p>We put the long-lead decisions first and the nice-to-haves where they can still move.</p>
+            </article>
+            <article class="principle-card" data-principle>
+              <span class="principle-card__index">04</span>
+              <figure class="principle-card__media">
+                <img src="/assets/img/planning/1517245386807-bb43f82c33c4.webp" alt="A person presenting a plan beside a laptop in a meeting" width="600" height="400" loading="lazy" decoding="async" data-fallback="/assets/img/planning-fallback.svg">
+                <figcaption>A short review keeps the plan alive.</figcaption>
+              </figure>
+              <h3>Keep a review rhythm</h3>
+              <p>A short weekly check keeps the plan current without turning it into another meeting.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stages" id="stages" aria-labelledby="stages-title" data-stages>
+      <div class="container">
+        <header class="stages__header">
+          <div>
+            <p class="eyebrow" data-reveal="fade-up">Plan in stages / Eight-week example</p>
+            <h2 class="stages__title" id="stages-title" data-reveal="fade-up">Five workstreams.<br><em>One clear sequence.</em></h2>
+          </div>
+          <p class="stages__intro" data-reveal="fade-up">A planning board for a single departure. Bars are active work; diamonds are decisions. Illustrative timing.</p>
+        </header>
+
+        <div class="stages__legend" aria-hidden="true">
+          <span><i class="stages__legend-bar"></i> Active work</span>
+          <span><i class="stages__legend-diamond"></i> Decision</span>
+          <span><i class="stages__legend-buffer"></i> Buffer</span>
+        </div>
+
+        <div class="stages__board" data-stages-board>
+          <div class="stages__axis" aria-hidden="true">
+            <span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span><span>W8</span>
+          </div>
+          <div class="stages__rows">
+            <article class="stage-row" data-stage-row>
+              <button class="stage-row__button" type="button" aria-expanded="false" aria-controls="stage-detail-1">
+                <span class="stage-row__name">Route brief</span>
+                <span class="stage-row__track"><span class="stage-row__bar"></span><span class="stage-row__milestone"></span></span>
+                <span class="stage-row__meta">2 weeks</span>
+              </button>
+              <div class="stage-row__popover" id="stage-detail-1">
+                <p><strong>Owner</strong> Route lead</p>
+                <p><strong>Duration</strong> Weeks 1–2</p>
+                <ul><li>Constraint map</li><li>Access check</li></ul>
+              </div>
+            </article>
+            <article class="stage-row" data-stage-row>
+              <button class="stage-row__button" type="button" aria-expanded="false" aria-controls="stage-detail-2">
+                <span class="stage-row__name">Guide &amp; partner</span>
+                <span class="stage-row__track"><span class="stage-row__bar"></span><span class="stage-row__milestone"></span></span>
+                <span class="stage-row__meta">4 weeks</span>
+              </button>
+              <div class="stage-row__popover" id="stage-detail-2">
+                <p><strong>Owner</strong> Local partnerships</p>
+                <p><strong>Duration</strong> Weeks 2–5</p>
+                <ul><li>Partner shortlist</li><li>Role agreement</li></ul>
+              </div>
+            </article>
+            <article class="stage-row" data-stage-row>
+              <button class="stage-row__button" type="button" aria-expanded="false" aria-controls="stage-detail-3">
+                <span class="stage-row__name">Permits &amp; access</span>
+                <span class="stage-row__track"><span class="stage-row__bar"></span><span class="stage-row__milestone"></span></span>
+                <span class="stage-row__meta">6 weeks</span>
+              </button>
+              <div class="stage-row__popover" id="stage-detail-3">
+                <p><strong>Owner</strong> Operations</p>
+                <p><strong>Duration</strong> Weeks 3–8</p>
+                <ul><li>Permit calendar</li><li>Fallback routes</li></ul>
+              </div>
+            </article>
+            <article class="stage-row" data-stage-row>
+              <button class="stage-row__button" type="button" aria-expanded="false" aria-controls="stage-detail-4">
+                <span class="stage-row__name">Kit &amp; training</span>
+                <span class="stage-row__track"><span class="stage-row__bar"></span><span class="stage-row__milestone"></span></span>
+                <span class="stage-row__meta">3 weeks</span>
+              </button>
+              <div class="stage-row__popover" id="stage-detail-4">
+                <p><strong>Owner</strong> Field lead</p>
+                <p><strong>Duration</strong> Weeks 5–7</p>
+                <ul><li>Kit list</li><li>Training walks</li></ul>
+              </div>
+            </article>
+            <article class="stage-row" data-stage-row>
+              <button class="stage-row__button" type="button" aria-expanded="false" aria-controls="stage-detail-5">
+                <span class="stage-row__name">Final review</span>
+                <span class="stage-row__track"><span class="stage-row__bar"></span><span class="stage-row__milestone"></span></span>
+                <span class="stage-row__meta">1 week</span>
+              </button>
+              <div class="stage-row__popover" id="stage-detail-5">
+                <p><strong>Owner</strong> Whole team</p>
+                <p><strong>Duration</strong> Week 8</p>
+                <ul><li>Go/no-go review</li><li>Weather call</li></ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="simulator" id="simulator" aria-labelledby="simulator-title" data-simulator>
+      <div class="container">
+        <header class="simulator__header">
+          <div>
+            <p class="eyebrow" data-reveal="fade-up">Scenario simulator / Illustrative model</p>
+            <h2 class="simulator__title" id="simulator-title" data-reveal="fade-up">Change the shape<br><em>of the plan.</em></h2>
+          </div>
+          <p class="simulator__intro" data-reveal="fade-up">Adjust team size and timeline to see how readiness, delivery window and open risks move. The numbers are examples, not guarantees.</p>
+        </header>
+
+        <div class="simulator__layout">
+          <div class="simulator__controls">
+            <div class="simulator__presets" role="group" aria-label="Scenario presets">
+              <button class="simulator__preset" type="button" data-preset="conservative" aria-pressed="false">Conservative</button>
+              <button class="simulator__preset is-active" type="button" data-preset="balanced" aria-pressed="true">Balanced</button>
+              <button class="simulator__preset" type="button" data-preset="aggressive" aria-pressed="false">Aggressive</button>
+            </div>
+
+            <div class="simulator__field">
+              <label for="sim-team">Team size <output id="sim-team-value" for="sim-team">6</output></label>
+              <input id="sim-team" type="range" min="2" max="12" step="1" value="6" data-sim-team>
+            </div>
+            <div class="simulator__field">
+              <label for="sim-weeks">Timeline <output id="sim-weeks-value" for="sim-weeks">8 weeks</output></label>
+              <input id="sim-weeks" type="range" min="4" max="16" step="1" value="8" data-sim-weeks>
+            </div>
+            <p class="simulator__note">Illustrative planning model. Not a quote, forecast or guarantee.</p>
+          </div>
+
+          <div class="simulator__output">
+            <div class="simulator__stats">
+              <article class="sim-stat">
+                <span class="sim-stat__value" data-sim-output="readiness">84</span>
+                <span class="sim-stat__label">readiness score</span>
+              </article>
+              <article class="sim-stat">
+                <span class="sim-stat__value" data-sim-output="weeks">8</span>
+                <span class="sim-stat__label">week window</span>
+              </article>
+              <article class="sim-stat">
+                <span class="sim-stat__value" data-sim-output="risks">3</span>
+                <span class="sim-stat__label">open risks</span>
+              </article>
+            </div>
+
+            <div class="simulator__chart">
+              <svg viewBox="0 0 320 150" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="sim-fill" x1="0" y1="0" x2="0" y2="1">
+                    <stop stop-color="#765b2d" stop-opacity=".26"/>
+                    <stop offset="1" stop-color="#765b2d" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <g class="sim-grid">
+                  <line x1="20" y1="20" x2="300" y2="20"/>
+                  <line x1="20" y1="75" x2="300" y2="75"/>
+                  <line x1="20" y1="130" x2="300" y2="130"/>
+                </g>
+                <path class="sim-area" data-sim-area d="M20 44.9 L76 37.1 L132 31.2 L188 29.9 L244 35.7 L300 43.5 L300 130 L20 130 Z"/>
+                <path class="sim-line" data-sim-line d="M20 44.9 L76 37.1 L132 31.2 L188 29.9 L244 35.7 L300 43.5"/>
+              </svg>
+            </div>
+            <p class="sr-only" aria-live="polite" data-sim-summary>Balanced scenario: 6 people over 8 weeks. Readiness 84. 3 open risks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="roadmap" id="roadmap" aria-labelledby="roadmap-title" data-roadmap>
+      <div class="container">
+        <header class="roadmap__header">
+          <div>
+            <p class="eyebrow" data-reveal="fade-up">Year roadmap / Example sequence</p>
+            <h2 class="roadmap__title" id="roadmap-title" data-reveal="fade-up">A year,<br><em>in quarters.</em></h2>
+          </div>
+          <p class="roadmap__intro" data-reveal="fade-up">A planning calendar for one operator. Quarters highlight in sequence as you scroll; select one to inspect its cards.</p>
+        </header>
+
+        <div class="roadmap__quarters" role="group" aria-label="Choose a quarter">
+          <button class="roadmap__quarter is-active" type="button" data-quarter="0" aria-pressed="true">Q1 <span>Jan–Mar</span></button>
+          <button class="roadmap__quarter" type="button" data-quarter="1" aria-pressed="false">Q2 <span>Apr–Jun</span></button>
+          <button class="roadmap__quarter" type="button" data-quarter="2" aria-pressed="false">Q3 <span>Jul–Sep</span></button>
+          <button class="roadmap__quarter" type="button" data-quarter="3" aria-pressed="false">Q4 <span>Oct–Dec</span></button>
+        </div>
+        <div class="roadmap__sweep" aria-hidden="true"><span data-roadmap-sweep></span></div>
+
+        <div class="roadmap__layout">
+          <div class="roadmap__grid">
+            <div class="roadmap__column is-active" data-quarter-panel="0">
+              <article class="roadmap-card"><span class="roadmap-card__date">January</span><h3>Route briefs signed</h3><p>Two departures locked with local partners and access notes.</p></article>
+              <article class="roadmap-card"><span class="roadmap-card__date">February</span><h3>Guide shortlist confirmed</h3><p>Named leads and fallback guides agreed before deposits.</p></article>
+            </div>
+            <div class="roadmap__column" data-quarter-panel="1">
+              <article class="roadmap-card"><span class="roadmap-card__date">April</span><h3>Permits filed</h3><p>Access windows submitted with two alternative dates.</p></article>
+              <article class="roadmap-card"><span class="roadmap-card__date">May</span><h3>Training walks begin</h3><p>Group briefings and kit checks start six weeks out.</p></article>
+            </div>
+            <div class="roadmap__column" data-quarter-panel="2">
+              <article class="roadmap-card"><span class="roadmap-card__date">July</span><h3>Weather review</h3><p>Seasonal forecast reviewed with the field lead and partners.</p></article>
+              <article class="roadmap-card"><span class="roadmap-card__date">August</span><h3>Final kit check</h3><p>Group kit signed off; spares and repair kit packed.</p></article>
+            </div>
+            <div class="roadmap__column" data-quarter-panel="3">
+              <article class="roadmap-card"><span class="roadmap-card__date">October</span><h3>Departure window</h3><p>Primary and fallback windows confirmed with the group.</p></article>
+              <article class="roadmap-card"><span class="roadmap-card__date">November</span><h3>Post-trip review</h3><p>Guide debrief, partner review and route notes updated.</p></article>
+            </div>
+          </div>
+
+          <figure class="roadmap__media" data-roadmap-media>
+            <img class="roadmap__image is-active" data-roadmap-image="0" src="/assets/img/planning/1505118380757-91f5f5632de0.webp" alt="An aerial view of a turquoise shoreline and pale beach" width="600" height="400" loading="lazy" decoding="async" data-fallback="/assets/img/planning-fallback.svg">
+            <img class="roadmap__image" data-roadmap-image="1" src="/assets/img/planning/1519046904884-53103b34b206.webp" alt="A bright beach with palm trees and a small sailboat" width="600" height="400" loading="lazy" decoding="async" data-fallback="/assets/img/planning-fallback.svg">
+            <img class="roadmap__image" data-roadmap-image="2" src="/assets/img/planning/1468581264429-2548ef9eb732.webp" alt="A calm blue sea fading into a pale horizon" width="600" height="400" loading="lazy" decoding="async" data-fallback="/assets/img/planning-fallback.svg">
+            <img class="roadmap__image" data-roadmap-image="3" src="/assets/img/planning/1471922694854-ff1b63b20054.webp" alt="Birds flying over a beach at sunrise" width="600" height="400" loading="lazy" decoding="async" data-fallback="/assets/img/planning-fallback.svg">
+            <figcaption data-roadmap-caption>Q1 / Route briefs</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="live-plan" id="live-plan" aria-labelledby="live-title" data-live-plan>
+      <div class="container">
+        <header class="live-plan__header">
+          <div>
+            <p class="eyebrow" data-reveal="fade-up">The plan, live / Product preview</p>
+            <h2 class="live-plan__title" id="live-title" data-reveal="fade-up">The plan,<br><em>in one place.</em></h2>
+          </div>
+          <p class="live-plan__intro" data-reveal="fade-up">A flat browser view of the planning workspace. Switch views to see the same plan through capacity and risk.</p>
+        </header>
+
+        <div class="live-plan__browser">
+          <div class="live-plan__chrome">
+            <span class="live-plan__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="live-plan__url">stackly / dashboard / plan</span>
+          </div>
+          <div class="live-plan__body">
+            <div class="live-plan__tabbar" role="tablist" aria-label="Plan views">
+              <button class="live-plan__tab" id="tab-overview" type="button" role="tab" aria-selected="true" aria-controls="panel-overview" tabindex="0">Overview</button>
+              <button class="live-plan__tab" id="tab-capacity" type="button" role="tab" aria-selected="false" aria-controls="panel-capacity" tabindex="-1">Capacity</button>
+              <button class="live-plan__tab" id="tab-risks" type="button" role="tab" aria-selected="false" aria-controls="panel-risks" tabindex="-1">Risks</button>
+              <span class="live-plan__underline" aria-hidden="true"><span data-tab-underline></span></span>
+            </div>
+
+            <div class="live-plan__panels">
+              <div class="live-plan__panel is-active" id="panel-overview" role="tabpanel" aria-labelledby="tab-overview" tabindex="0">
+                <div class="live-plan__summary"><span>Departure readiness</span><strong>84 / 100</strong></div>
+                <div class="live-bars" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="live-plan__mini-stats"><span>Route cards 12</span><span>Open actions 7</span><span>Reviews 3</span></div>
+                <figure class="live-plan__snapshot"><img src="/assets/img/planning/1551288049-bebda4e38f71.webp" alt="A dark analytics dashboard showing usage charts and graphs" width="600" height="400" loading="lazy" decoding="async" data-fallback="/assets/img/planning-fallback.svg"></figure>
+              </div>
+
+              <div class="live-plan__panel" id="panel-capacity" role="tabpanel" aria-labelledby="tab-capacity" tabindex="-1" aria-hidden="true">
+                <div class="live-plan__summary"><span>Guide capacity</span><strong>72% committed</strong></div>
+                <div class="live-bars live-bars--capacity" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="live-plan__mini-stats"><span>Lead guides 4</span><span>Fallback guides 2</span><span>Buffer days 3</span></div>
+                <figure class="live-plan__snapshot"><img src="/assets/img/planning/1460925895917-afdab827c52f.webp" alt="A laptop on a desk showing a planning dashboard with charts" width="600" height="400" loading="lazy" decoding="async" data-fallback="/assets/img/planning-fallback.svg"></figure>
+              </div>
+
+              <div class="live-plan__panel" id="panel-risks" role="tabpanel" aria-labelledby="tab-risks" tabindex="-1" aria-hidden="true">
+                <div class="live-plan__summary"><span>Open risks</span><strong>3 / 9</strong></div>
+                <svg class="live-spark" viewBox="0 0 320 90" aria-hidden="true">
+                  <path class="live-spark__path" pathLength="100" d="M12 68C54 62 58 44 92 48S136 66 168 52 208 20 240 28 284 42 308 18"/>
+                </svg>
+                <ul class="live-plan__risk-list"><li><span>Weather window</span><strong>Medium</strong></li><li><span>Permit confirmation</span><strong>Low</strong></li><li><span>Guide availability</span><strong>Medium</strong></li></ul>
+                <figure class="live-plan__snapshot"><img src="/assets/img/planning/1543286386-713bdd548da4.webp" alt="A hand-drawn line chart on a notebook with a ruler and pens" width="600" height="400" loading="lazy" decoding="async" data-fallback="/assets/img/planning-fallback.svg"></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="text-link live-plan__link" href="/dashboard">Open the field journal <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="readiness" id="readiness" aria-labelledby="readiness-title" data-readiness>
+      <div class="readiness__grain" aria-hidden="true"></div>
+      <div class="readiness__glow" aria-hidden="true"></div>
+      <div class="container readiness__layout">
+        <div class="readiness__checklist">
+          <p class="eyebrow">Readiness / Five checks</p>
+          <h3>Before you commit.</h3>
+          <div class="readiness__ring-wrap">
+            <svg class="readiness__ring" viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="readiness__ring-track" cx="60" cy="60" r="50"/>
+              <circle class="readiness__ring-fill" data-readiness-ring cx="60" cy="60" r="50" pathLength="100"/>
+            </svg>
+            <span class="readiness__count" data-readiness-count>0 / 5</span>
+          </div>
+          <ul class="readiness__items">
+            <li><label><input type="checkbox" data-readiness-item><span>Dates or a clear travel window are agreed.</span></label></li>
+            <li><label><input type="checkbox" data-readiness-item><span>Budget range and payment timing are understood.</span></label></li>
+            <li><label><input type="checkbox" data-readiness-item><span>Group size, pace and experience level are known.</span></label></li>
+            <li><label><input type="checkbox" data-readiness-item><span>The decision-maker is in the room.</span></label></li>
+            <li><label><input type="checkbox" data-readiness-item><span>Weather and fallback decisions have an owner.</span></label></li>
+          </ul>
+          <p class="sr-only" aria-live="polite" data-readiness-live>0 of 5 planning checks complete.</p>
+        </div>
+
+        <div class="readiness__cta">
+          <p class="eyebrow">Start planning</p>
+          <h2 class="readiness__title" id="readiness-title">Turn the idea<br><em>into a dated plan.</em></h2>
+          <p class="readiness__deck">Bring the constraints. We’ll bring the sequence, the owners and the honest trade-offs.</p>
+          <a class="btn btn--primary readiness__button" href="/contact" data-magnetic>Start a conversation <span aria-hidden="true">→</span></a>
+          <a class="readiness__link" href="/contact">Or ask a question first <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SHARED:FOOTER START -->
+  <footer class="site-footer section-dark" id="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__brand-column">
+          <a class="footer__brand" href="/index.html" aria-label="Stackly Tourism home"><img class="footer__brand-logo" src="/assets/logo/logo-stackly.webp" alt="Stackly Tourism" width="180" height="52"></a>
+          <p>Small-group journeys for curious travelers, led by local experts into wild places.</p>
+          <div class="footer__socials" aria-label="Social media">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (general link)">Instagram <span aria-hidden="true">→</span></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube (general link)">YouTube <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="footer__column">
+          <h2 class="footer__heading">Explore</h2>
+          <ul>
+            <li><a href="/404.html">Our approach</a></li>
+            <li><a href="/404.html">Ways to travel</a></li>
+            <li><a href="/404.html">Journeys</a></li>
+            <li><a href="/404.html">Field journal</a></li>
+            <li><a href="/404.html">Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h2 class="footer__heading">Useful things</h2>
+          <ul>
+            <li><a href="/404.html">Common questions</a></li>
+            <li><a href="/404.html">Talk to us</a></li>
+            <li><a href="/404.html">Privacy</a></li>
+            <li><a href="/404.html">Terms</a></li>
+          </ul>
+        </div>
+        <div class="footer__newsletter">
+          <h2 class="footer__heading">A note from the field</h2>
+          <p>Occasional route ideas and useful things to know outdoors. No weekly noise.</p>
+          <form class="newsletter" data-newsletter novalidate>
+            <label class="sr-only" for="newsletter-email">Your email address</label>
+            <div class="newsletter__field">
+              <input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="Email address" required aria-describedby="newsletter-message">
+              <button class="newsletter__submit" type="submit" aria-label="Subscribe to the Stackly field note"><span aria-hidden="true">→</span></button>
+            </div>
+            <p class="newsletter__message" id="newsletter-message" aria-live="polite">No backend connected. This form demonstrates the sign-up flow.</p>
+          </form>
+        </div>
+      </div>
+<div class="footer__bottom">
+        <p>© <span data-current-year>2026</span> Stackly Tourism. Concept site.</p>
+        <div class="footer__legal"><a href="/404.html">Privacy</a><a href="/404.html">Terms</a></div>
+        <a class="footer__top" href="#top">Back to top <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </footer>
+  <!-- SHARED:FOOTER END -->
+
+  <script src="/js/main.js" defer></script>
+  <script src="/js/planning.js" defer></script>
+</body>
+</html>

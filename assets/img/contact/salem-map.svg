@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="map-title map-desc">
+  <title id="map-title">Illustrative map of Salem, Tamil Nadu</title>
+  <desc id="map-desc">A warm, light street map of central Salem with roads, the Thirumanimutharu river, neighbourhood labels and the Stackly Tourism studio location.</desc>
+
+  <rect width="1200" height="750" fill="#e9e3d7"/>
+
+  <g fill="#d8d0c0" opacity=".58">
+    <path d="M34 42h168l-22 84H18z"/>
+    <path d="M238 24h194l16 86H252z"/>
+    <path d="M470 38h152l-18 104H452z"/>
+    <path d="M666 20h180l4 104H650z"/>
+    <path d="M882 38h128l34 82H890z"/>
+    <path d="M1046 32h120v98h-126z"/>
+    <path d="M42 164h148l18 90H52z"/>
+    <path d="M226 158h180l-8 104H218z"/>
+    <path d="M436 176h162l12 84H448z"/>
+    <path d="M634 162h202l-12 112H626z"/>
+    <path d="M866 160h194l-14 100H860z"/>
+    <path d="M1092 156h108v112h-124z"/>
+    <path d="M22 302h166l-12 96H34z"/>
+    <path d="M220 298h150l10 108H208z"/>
+    <path d="M402 302h188l-12 96H414z"/>
+    <path d="M622 294h146l18 112H640z"/>
+    <path d="M810 300h182l-12 100H818z"/>
+    <path d="M1024 286h176l-12 120H1036z"/>
+    <path d="M38 440h190l-10 106H28z"/>
+    <path d="M260 436h136l22 112H268z"/>
+    <path d="M434 446h158l-8 96H446z"/>
+    <path d="M622 436h192l-16 112H638z"/>
+    <path d="M842 442h154l-12 100H850z"/>
+    <path d="M1028 430h172v116h-186z"/>
+    <path d="M26 594h172l18 116H16z"/>
+    <path d="M230 586h166l-16 124H238z"/>
+    <path d="M424 596h176l-16 114H434z"/>
+    <path d="M628 590h194l-10 120H638z"/>
+    <path d="M846 588h170l-18 122H856z"/>
+    <path d="M1042 586h158v124h-176z"/>
+  </g>
+
+  <g fill="#c7d0b9" opacity=".82">
+    <path d="M60 196c48-18 92 10 84 52-7 38-49 46-83 30-26-12-28-68-1-82z"/>
+    <path d="M756 88c30-22 76-12 90 18 13 29-8 64-43 66-46 2-76-46-47-84z"/>
+    <path d="M1016 328c34-20 78-2 82 32 4 37-34 58-67 43-35-16-48-58-15-75z"/>
+    <path d="M176 516c34-22 80-4 82 28 2 32-28 52-61 42-36-11-50-50-21-70z"/>
+    <path d="M694 508c36-18 76 4 76 36 0 33-31 50-63 39-34-12-46-56-13-75z"/>
+    <path d="M914 640c22-20 60-16 74 8 14 25-1 54-29 60-35 8-66-42-45-68z"/>
+  </g>
+
+  <g fill="none" stroke="#d1c9ba" stroke-width="3" opacity=".78">
+    <path d="M18 122h1164M18 394h1164M18 512h1164M18 690h1164"/>
+    <path d="M188 12v726M354 12v726M548 12v726M734 12v726M928 12v726M1104 12v726"/>
+    <path d="M-20 78l1240 602M-20 364l1240-214M-20 616l1240-318M58 774L1174 8"/>
+    <path d="M30 236l1120 298M30 448l1120-224M122 768L1168 66"/>
+  </g>
+
+  <g fill="none" stroke="#f8f5ed" stroke-width="9" opacity=".95">
+    <path d="M-10 122h1220M-10 394h1220M-10 512h1220M-10 690h1220"/>
+    <path d="M188 -10v770M354 -10v770M548 -10v770M734 -10v770M928 -10v770M1104 -10v770"/>
+    <path d="M-10 78l1220 602M-10 364l1220-214M-10 616l1220-318M58 764L1174 -2"/>
+    <path d="M30 236l1120 298M30 448l1120-224M122 758L1168 56"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M-30 566C176 540 318 468 486 438S778 426 932 350 1092 292 1230 248" stroke="#cfc6b5" stroke-width="32"/>
+    <path d="M-30 566C176 540 318 468 486 438S778 426 932 350 1092 292 1230 248" stroke="#fbf8f1" stroke-width="24"/>
+    <path d="M-30 566C176 540 318 468 486 438S778 426 932 350 1092 292 1230 248" stroke="#e2d7c2" stroke-width="1.5" stroke-dasharray="2 10"/>
+    <path d="M186 -30C232 160 320 254 462 346S646 526 690 780" stroke="#cfc6b5" stroke-width="34"/>
+    <path d="M186 -30C232 160 320 254 462 346S646 526 690 780" stroke="#fbf8f1" stroke-width="25"/>
+    <path d="M386 -30C408 150 508 278 602 402S738 618 764 780" stroke="#fbf8f1" stroke-width="16"/>
+    <path d="M-30 260C218 268 390 204 592 216S938 300 1230 206" stroke="#fbf8f1" stroke-width="15"/>
+    <path d="M-30 438C264 402 420 466 626 456S960 382 1230 430" stroke="#fbf8f1" stroke-width="13"/>
+    <path d="M-30 636C240 624 434 674 660 638S1010 578 1230 610" stroke="#fbf8f1" stroke-width="14"/>
+    <path d="M300 768L716 34M830 768L1014 20M1048 768L1142 286" stroke="#fbf8f1" stroke-width="11"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M1008 -30C968 118 902 186 918 312S1002 520 954 780" stroke="#b4c7c4" stroke-width="46" opacity=".78"/>
+    <path d="M1008 -30C968 118 902 186 918 312S1002 520 954 780" stroke="#d3dfdc" stroke-width="28"/>
+    <path d="M1008 -30C968 118 902 186 918 312S1002 520 954 780" stroke="#a8bfbe" stroke-width="1.5" stroke-dasharray="3 8"/>
+  </g>
+
+  <g fill="#c9b58b" opacity=".65">
+    <circle cx="584" cy="350" r="10"/>
+    <circle cx="586" cy="350" r="20" fill="none" stroke="#c9b58b" stroke-width="1.5"/>
+    <circle cx="404" cy="546" r="8"/>
+    <circle cx="404" cy="546" r="17" fill="none" stroke="#c9b58b" stroke-width="1.5"/>
+  </g>
+
+  <g fill="#6d675c" font-family="Inter, Arial, sans-serif">
+    <text x="64" y="92" font-size="13" letter-spacing="3">SALEM / CENTRAL</text>
+    <text x="64" y="130" font-size="42" font-family="Georgia, serif" letter-spacing="2">Salem</text>
+    <text x="66" y="154" font-size="12" letter-spacing="2.6" opacity=".8">TAMIL NADU / 11.66° N</text>
+
+    <g font-size="11" letter-spacing="2.5" opacity=".75">
+      <text x="358" y="122" transform="rotate(-4 358 122)">FAIRLANDS</text>
+      <text x="770" y="172" transform="rotate(-4 770 172)">HASTHAMPTTI</text>
+      <text x="802" y="468" transform="rotate(-6 802 468)">SHEVAPET</text>
+      <text x="196" y="412" transform="rotate(5 196 412)">ALAGAPURAM</text>
+      <text x="210" y="650" transform="rotate(-4 210 650)">SURAMANGALAM</text>
+      <text x="822" y="624" transform="rotate(6 822 624)">FIVE ROADS</text>
+      <text x="1046" y="198" transform="rotate(12 1046 198)">RIVER THIRUMANIMUTHARU</text>
+    </g>
+
+    <g font-size="9" letter-spacing="2" opacity=".56" fill="#797164">
+      <text x="88" y="468" transform="rotate(18 88 468)">OMALUR ROAD</text>
+      <text x="652" y="430" transform="rotate(18 652 430)">CHERRY ROAD</text>
+      <text x="846" y="324" transform="rotate(-20 846 324)">SARADHA COLLEGE ROAD</text>
+      <text x="220" y="600" transform="rotate(8 220 600)">TRICHY ROAD</text>
+      <text x="700" y="560" transform="rotate(54 700 560)">JUNCTION MAIN ROAD</text>
+    </g>
+
+    <g font-size="9" opacity=".52" fill="#7e7669">
+      <text x="64" y="710">Illustrative map / not to scale</text>
+      <text x="994" y="712">11.66° N / 78.15° E</text>
+    </g>
+
+    <g transform="translate(1122 96)">
+      <path d="M0 34 9 0l9 34-9-7z" fill="#8d774e"/>
+      <text x="18" y="10" font-size="9" letter-spacing="2" fill="#7e7669">N</text>
+    </g>
+
+    <g transform="translate(72 680)" fill="#7e7669">
+      <path d="M0 0h62M0 0v-5M62 0v-5M31 0v-5" stroke="#7e7669" stroke-width="1"/>
+      <text x="0" y="16" font-size="9" opacity=".7">0</text>
+      <text x="52" y="16" font-size="9" opacity=".7">1 km</text>
+    </g>
+  </g>
+</svg>

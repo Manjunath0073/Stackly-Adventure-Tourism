@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B0B0F">
+  <meta name="description" content="Stackly Tourism services: route design, alpine guiding, river and coast planning, wildlife fieldcraft and private departures.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://stacklytourism.example/services">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/services.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Stackly Tourism">
+  <meta property="og:title" content="Services — Stackly Tourism">
+  <meta property="og:description" content="Route design, guiding and field support for journeys that need to work in real weather.">
+  <meta property="og:url" content="https://stacklytourism.example/services">
+  <meta property="og:image" content="/assets/img/services/1501555088652-021faa106b9b.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Services — Stackly Tourism">
+  <meta name="twitter:description" content="Route design, guiding and field support for journeys that need to work in real weather.">
+  <meta name="twitter:image" content="/assets/img/services/1501555088652-021faa106b9b.webp">
+  <title>Services — Stackly Tourism</title>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://stacklytourism.example/#organization",
+          "name": "Stackly Tourism",
+          "url": "https://stacklytourism.example/",
+          "description": "Small-group journeys for curious travelers, led by local experts into wild places."
+        },
+        {
+          "@type": "Service",
+          "@id": "https://stacklytourism.example/services#service",
+          "name": "Stackly Tourism services",
+          "serviceType": "Expedition route design, guiding and field support",
+          "provider": { "@id": "https://stacklytourism.example/#organization" },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Stackly services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Route design and guiding" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Alpine journeys" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "River and coast journeys" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wildlife and fieldcraft" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private departures" } }
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stacklytourism.example/" },
+            { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://stacklytourism.example/services" }
+          ]
+        }
+      ]
+    }
+  </script>
+</head>
+<body class="page page--services">
+  <div id="top"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- SHARED:NAV START -->
+  <header class="site-header" id="site-header">
+    <div class="nav" id="primary-navigation">
+      <div class="nav__bar">
+        <a class="nav__brand" href="/index.html" aria-label="Stackly Tourism home"><img class="nav__brand-logo" src="/assets/logo/logo-stackly.webp" alt="Stackly Tourism" width="145" height="42"></a>
+
+        <button class="nav__toggle" type="button" aria-label="Open navigation" aria-controls="nav-panel" aria-expanded="false">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+
+        <div class="nav__panel" id="nav-panel">
+          <nav class="nav__primary" aria-label="Primary navigation">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="/index.html">Home</a></li>
+              <li class="nav__item"><a class="nav__link" href="/about.html">About</a></li>
+              <li class="nav__item"><a class="nav__link" href="/services.html" aria-current="page">Services</a></li>
+              <li class="nav__item"><a class="nav__link" href="/journeys.html">Journeys</a></li>
+              <li class="nav__item"><a class="nav__link" href="/planning.html">Planning</a></li>
+              <li class="nav__item"><a class="nav__link" href="/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <a class="btn btn--primary nav__cta" href="/login.html">Plan a journey <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- SHARED:NAV END -->
+
+  <main id="main">
+    <section class="services-hero" aria-labelledby="services-hero-title">
+      <div class="container services-hero__layout">
+        <div class="services-hero__intro">
+          <p class="eyebrow">Services / Five ways in</p>
+          <h1 class="services-hero__title" id="services-hero-title">What we do<br><em>out there.</em></h1>
+          <p class="services-hero__thesis">Route design, guiding and field support for journeys that need to work in real weather, with real people, on real ground.</p>
+        </div>
+
+        <div class="service-index" data-service-index>
+          <div class="service-index__list" role="group" aria-label="Choose a service">
+            <button class="service-index__row is-active" type="button" data-service-row data-service-target="route" aria-pressed="true" aria-controls="service-preview-route">
+              <span class="service-index__thumb">
+                <img src="/assets/img/services/1501555088652-021faa106b9b.webp" alt="A hiker with a yellow backpack looking into a green mountain valley" width="800" height="450" loading="lazy" decoding="async" data-fallback="/assets/img/services-fallback.svg">
+              </span>
+              <span class="service-index__num">01</span>
+              <span class="service-index__name">Route design &amp; guiding</span>
+              <span class="service-index__arrow" aria-hidden="true">→</span>
+              <span class="service-index__mobile-copy">A route that fits the place, the season and the people walking it.</span>
+              <span class="service-index__mobile-tags">Scoping / Permits / Guide briefings</span>
+            </button>
+            <button class="service-index__row" type="button" data-service-row data-service-target="alpine" aria-pressed="false" aria-controls="service-preview-alpine">
+              <span class="service-index__thumb">
+                <img src="/assets/img/services/1454496522488-7a8e488e8606.webp" alt="Snow-covered mountain peaks under a pale, cloud-streaked sky" width="800" height="450" loading="lazy" decoding="async" data-fallback="/assets/img/services-fallback.svg">
+              </span>
+              <span class="service-index__num">02</span>
+              <span class="service-index__name">Alpine journeys</span>
+              <span class="service-index__arrow" aria-hidden="true">→</span>
+              <span class="service-index__mobile-copy">High routes with conservative calls and local leaders who know when to turn.</span>
+              <span class="service-index__mobile-tags">Hut nights / Glacier travel / Weather windows</span>
+            </button>
+            <button class="service-index__row" type="button" data-service-row data-service-target="water" aria-pressed="false" aria-controls="service-preview-water">
+              <span class="service-index__thumb">
+                <img src="/assets/img/services/1500375592092-40eb2168fd21.webp" alt="A wave breaking near the shore in soft evening light" width="800" height="450" loading="lazy" decoding="async" data-fallback="/assets/img/services-fallback.svg">
+              </span>
+              <span class="service-index__num">03</span>
+              <span class="service-index__name">River &amp; coast</span>
+              <span class="service-index__arrow" aria-hidden="true">→</span>
+              <span class="service-index__mobile-copy">Water-led days paced around tides, flow and the next safe landing.</span>
+              <span class="service-index__mobile-tags">Tidal planning / Packrafting / Coastal access</span>
+            </button>
+            <button class="service-index__row" type="button" data-service-row data-service-target="wildlife" aria-pressed="false" aria-controls="service-preview-wildlife">
+              <span class="service-index__thumb">
+                <img src="/assets/img/services/1549366021-9f761d450615.webp" alt="An elephant standing in the deep shade of a forest" width="800" height="450" loading="lazy" decoding="async" data-fallback="/assets/img/services-fallback.svg">
+              </span>
+              <span class="service-index__num">04</span>
+              <span class="service-index__name">Wildlife &amp; fieldcraft</span>
+              <span class="service-index__arrow" aria-hidden="true">→</span>
+              <span class="service-index__mobile-copy">Quiet observation with guides who put the animal’s space first.</span>
+              <span class="service-index__mobile-tags">Tracking / Ethics / Low-impact camps</span>
+            </button>
+            <button class="service-index__row" type="button" data-service-row data-service-target="private" aria-pressed="false" aria-controls="service-preview-private">
+              <span class="service-index__thumb">
+                <img src="/assets/img/services/1500530855697-b586d89ba3ee.webp" alt="An empty road winding between red desert rock walls" width="700" height="450" loading="lazy" decoding="async" data-fallback="/assets/img/services-fallback.svg">
+              </span>
+              <span class="service-index__num">05</span>
+              <span class="service-index__name">Private departures</span>
+              <span class="service-index__arrow" aria-hidden="true">→</span>
+              <span class="service-index__mobile-copy">Your group, your dates, a route built around how you actually travel.</span>
+              <span class="service-index__mobile-tags">Custom dates / Group fit / Direct planning</span>
+            </button>
+          </div>
+
+          <div class="service-index__previews">
+            <figure class="service-preview is-active" id="service-preview-route" data-service-preview="route" aria-hidden="false">
+              <img src="/assets/img/services/1501555088652-021faa106b9b.webp" alt="A hiker with a yellow backpack looking into a green mountain valley" width="800" height="1000" fetchpriority="high" decoding="async" data-fallback="/assets/img/services-fallback.svg">
+              <figcaption class="service-preview__caption">
+                <p class="service-preview__descriptor">A route that fits the place, the season and the people walking it.</p>
+                <ul class="service-preview__tags"><li>Scoping</li><li>Permits</li><li>Guide briefings</li></ul>
+              </figcaption>
+            </figure>
+            <figure class="service-preview" id="service-preview-alpine" data-service-preview="alpine" aria-hidden="false">
+              <img src="/assets/img/services/1454496522488-7a8e488e8606.webp" alt="Snow-covered mountain peaks under a pale, cloud-streaked sky" width="800" height="1000" loading="lazy" decoding="async" data-hero-preload data-fallback="/assets/img/services-fallback.svg">
+              <figcaption class="service-preview__caption">
+                <p class="service-preview__descriptor">High routes with conservative calls and local leaders who know when to turn.</p>
+                <ul class="service-preview__tags"><li>Hut nights</li><li>Glacier travel</li><li>Weather windows</li></ul>
+              </figcaption>
+            </figure>
+            <figure class="service-preview" id="service-preview-water" data-service-preview="water" aria-hidden="false">
+              <img src="/assets/img/services/1500375592092-40eb2168fd21.webp" alt="A wave breaking near the shore in soft evening light" width="800" height="1000" loading="lazy" decoding="async" data-hero-preload data-fallback="/assets/img/services-fallback.svg">
+              <figcaption class="service-preview__caption">
+                <p class="service-preview__descriptor">Water-led days paced around tides, flow and the next safe landing.</p>
+                <ul class="service-preview__tags"><li>Tidal planning</li><li>Packrafting</li><li>Coastal access</li></ul>
+              </figcaption>
+            </figure>
+            <figure class="service-preview" id="service-preview-wildlife" data-service-preview="wildlife" aria-hidden="false">
+              <img src="/assets/img/services/1549366021-9f761d450615.webp" alt="An elephant standing in the deep shade of a forest" width="800" height="1000" loading="lazy" decoding="async" data-hero-preload data-fallback="/assets/img/services-fallback.svg">
+              <figcaption class="service-preview__caption">
+                <p class="service-preview__descriptor">Quiet observation with guides who put the animal’s space first.</p>
+                <ul class="service-preview__tags"><li>Tracking</li><li>Ethics</li><li>Low-impact camps</li></ul>
+              </figcaption>
+            </figure>
+            <figure class="service-preview" id="service-preview-private" data-service-preview="private" aria-hidden="false">
+              <img src="/assets/img/services/1500530855697-b586d89ba3ee.webp" alt="An empty road winding between red desert rock walls" width="700" height="875" loading="lazy" decoding="async" data-hero-preload data-fallback="/assets/img/services-fallback.svg">
+              <figcaption class="service-preview__caption">
+                <p class="service-preview__descriptor">Your group, your dates, a route built around how you actually travel.</p>
+                <ul class="service-preview__tags"><li>Custom dates</li><li>Group fit</li><li>Direct planning</li></ul>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="disciplines" aria-labelledby="disciplines-title">
+      <div class="container">
+        <div class="disciplines__header">
+          <div>
+            <p class="eyebrow">Disciplines / The work behind the journey</p>
+            <h2 class="disciplines__title" id="disciplines-title">The work behind<br><em>the journey.</em></h2>
+          </div>
+          <p class="disciplines__intro">Six capabilities we bring to a route before anyone puts a boot on the ground.</p>
+        </div>
+
+        <div class="disciplines__grid">
+          <article class="discipline" data-discipline>
+            <span class="discipline__index">01</span>
+            <span class="discipline__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="m6 38 12-27 7 15 5-9 12 21M6 38h36M17 20l6 4m8-2 5 4" /></svg></span>
+            <h3>Route architecture</h3>
+            <p>Trail logic, daily distance and honest bail-out points before a route is sold as a journey.</p>
+          </article>
+          <article class="discipline" data-discipline>
+            <span class="discipline__index">02</span>
+            <span class="discipline__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="15"/><path d="m29 19-3 7-7 3 3-7zM24 6v4m0 28v4M6 24h4m28 0h4" /></svg></span>
+            <h3>Local guiding</h3>
+            <p>Regional leaders with the standing, knowledge and judgement to make the call on the ground.</p>
+          </article>
+          <article class="discipline" data-discipline>
+            <span class="discipline__index">03</span>
+            <span class="discipline__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M9 16h30v24H9zM16 16V9h16v7M9 24h30M20 24v5h8v-5" /></svg></span>
+            <h3>Field logistics</h3>
+            <p>Transfers, permits, huts and the unglamorous details that decide whether a day flows.</p>
+          </article>
+          <article class="discipline" data-discipline>
+            <span class="discipline__index">04</span>
+            <span class="discipline__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M12 30a8 8 0 1 1 3-15 10 10 0 0 1 19 2 7 7 0 0 1-1 14H12zM18 36l3 5m7-5 3 5" /></svg></span>
+            <h3>Risk &amp; weather</h3>
+            <p>A plan for the forecast, and a second plan for the moment the forecast stops being useful.</p>
+          </article>
+          <article class="discipline" data-discipline>
+            <span class="discipline__index">05</span>
+            <span class="discipline__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M9 33h30v7H9zM13 33l3-17h16l3 17M20 16v-5h8v5M20 26h8" /><circle cx="24" cy="24" r="3"/></svg></span>
+            <h3>Field notes</h3>
+            <p>Photography and documentation that stay useful after the trip, not just attractive during it.</p>
+          </article>
+          <article class="discipline" data-discipline>
+            <span class="discipline__index">06</span>
+            <span class="discipline__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="17" cy="19" r="5"/><circle cx="31" cy="19" r="5"/><path d="M7 38c0-7 5-11 10-11s10 4 10 11M21 38c0-7 5-11 10-11s10 4 10 11" /></svg></span>
+            <h3>Private departures</h3>
+            <p>Small groups with a route shaped around the people in it, not a fixed calendar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-details" aria-labelledby="service-details-title">
+      <div class="container">
+        <div class="service-details__header">
+          <div>
+            <p class="eyebrow">Selected services / How we go deeper</p>
+            <h2 class="service-details__title" id="service-details-title">Built for the ground<br><em>you’re on.</em></h2>
+          </div>
+          <p class="service-details__intro">Three flagship services, each shaped around a different kind of exposure: altitude, water and local relationship.</p>
+        </div>
+
+        <article class="detail-row" id="service-route">
+          <div class="detail-row__text">
+            <p class="detail-row__overline">01 / Route design &amp; guiding</p>
+            <h3>A route is an argument about how a day should feel.</h3>
+            <p>We build the walking day first, then fit the logistics around it. That means honest distance, clear exits and a guide briefing that leaves room for the ground truth.</p>
+            <ul class="detail-row__deliverables">
+              <li>Daily route cards with distance, elevation and exit points</li>
+              <li>Permit and access checks before any deposit</li>
+              <li>Local guide briefing and weather contingencies</li>
+            </ul>
+            <details class="detail-row__expander">
+              <summary><span>What’s included</span><span class="detail-row__plus" aria-hidden="true"></span></summary>
+              <div class="detail-row__expander-body"><p>Route scoping workshop, two revision rounds, GPX files, access notes and a final guide briefing. Placeholder scope; confirmed per project.</p></div>
+            </details>
+          </div>
+          <figure class="detail-row__media" data-clip-reveal>
+            <img src="/assets/img/services/1526772662000-3f88f10405ff.webp" alt="A hiker on a rocky ridge beside a stone cairn above a mountain valley" width="800" height="600" loading="lazy" decoding="async" data-fallback="/assets/img/services-fallback.svg">
+          </figure>
+        </article>
+
+        <article class="detail-row detail-row--reverse" id="service-water">
+          <div class="detail-row__text">
+            <p class="detail-row__overline">02 / River &amp; coast</p>
+            <h3>Water sets the schedule. We plan around it.</h3>
+            <p>Tides, flow and landing options decide the day. We design the route around the water’s timetable, then build in the shuttle and safety margins that make it work.</p>
+            <ul class="detail-row__deliverables">
+              <li>Tidal and flow windows for each day</li>
+              <li>Put-in, take-out and emergency egress notes</li>
+              <li>Water-specific kit and guide ratios</li>
+            </ul>
+            <details class="detail-row__expander">
+              <summary><span>What’s included</span><span class="detail-row__plus" aria-hidden="true"></span></summary>
+              <div class="detail-row__expander-body"><p>Tidal planning, shuttle logistics, safety briefings, local operator liaison and a conditions call sheet. Placeholder scope; confirmed per project.</p></div>
+            </details>
+          </div>
+          <figure class="detail-row__media" data-clip-reveal>
+            <img src="/assets/img/services/1476514525535-07fb3b4ae5f1.webp" alt="The wooden bow of a boat on a turquoise alpine lake beneath mountains" width="1000" height="667" loading="lazy" decoding="async" data-fallback="/assets/img/services-fallback.svg">
+          </figure>
+        </article>
+
+        <article class="detail-row" id="service-local">
+          <div class="detail-row__text">
+            <p class="detail-row__overline">03 / Local partnerships</p>
+            <h3>The best local knowledge is a relationship, not a directory.</h3>
+            <p>We work with a small number of regional partners whose judgement we trust. Roles, money and responsibility are agreed before the first traveler arrives.</p>
+            <ul class="detail-row__deliverables">
+              <li>Partner selection and fair-scope agreements</li>
+              <li>Community and access protocol notes</li>
+              <li>Shared field briefing with named responsibilities</li>
+            </ul>
+            <details class="detail-row__expander">
+              <summary><span>What’s included</span><span class="detail-row__plus" aria-hidden="true"></span></summary>
+              <div class="detail-row__expander-body"><p>Partner introductions, role clarity, cultural and access guidance, and a shared debrief after departure. Placeholder scope; confirmed per project.</p></div>
+            </details>
+          </div>
+          <figure class="detail-row__media" data-clip-reveal>
+            <img src="/assets/img/services/1528181304800-259b08848526.webp" alt="An ornate temple complex with a standing Buddha and golden roofs" width="700" height="525" loading="lazy" decoding="async" data-fallback="/assets/img/services-fallback.svg">
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <section class="process" aria-labelledby="process-title" data-process>
+      <div class="container">
+        <div class="process__header">
+          <div>
+            <p class="eyebrow">Engagement process / From brief to ground</p>
+            <h2 class="process__title" id="process-title">From first brief<br><em>to first light.</em></h2>
+          </div>
+          <p class="process__intro">A short, direct process. No discovery theatre, no forty-page deck before the useful conversation.</p>
+        </div>
+
+        <div class="process-path" data-process-path>
+          <svg class="process-path__line" viewBox="0 0 1000 520" preserveAspectRatio="none" aria-hidden="true">
+            <path data-process-line d="M40 450C220 420 220 300 380 310S650 180 760 190 920 80 960 70" />
+          </svg>
+          <ol class="process-path__steps">
+            <li class="process-step">
+              <span class="process-step__node" aria-hidden="true">01</span>
+              <h3>Frame the brief</h3>
+              <p>We define the group, the season, the comfort level and the non-negotiables.</p>
+            </li>
+            <li class="process-step">
+              <span class="process-step__node" aria-hidden="true">02</span>
+              <h3>Read the ground</h3>
+              <p>Local partners and field notes test the idea against access, weather and pace.</p>
+            </li>
+            <li class="process-step">
+              <span class="process-step__node" aria-hidden="true">03</span>
+              <h3>Build the route</h3>
+              <p>You get daily cards, contingencies and a clear list of what is and is not included.</p>
+            </li>
+            <li class="process-step">
+              <span class="process-step__node" aria-hidden="true">04</span>
+              <h3>Travel &amp; review</h3>
+              <p>The guide makes the call on the ground. We debrief what worked and what changes next time.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolkit" aria-labelledby="toolkit-title">
+      <div class="container">
+        <div class="toolkit__header">
+          <div>
+            <p class="eyebrow">Toolkit / The working stack</p>
+            <h2 class="toolkit__title" id="toolkit-title">A working field kit.<br><em>Not a logo wall.</em></h2>
+          </div>
+          <p class="toolkit__intro">The practical things we use to turn a good idea into a day that holds together.</p>
+        </div>
+
+        <div class="toolkit__bands" aria-label="Field tools and planning practices">
+          <div class="toolkit__band toolkit__band--right">
+            <div class="toolkit__track">
+              <span class="toolkit__mark">Topographic maps</span><span class="toolkit__mark">Weather briefings</span><span class="toolkit__mark">Permit trackers</span><span class="toolkit__mark">Guide briefings</span><span class="toolkit__mark">GPX routes</span><span class="toolkit__mark">Tide tables</span><span class="toolkit__mark">Risk matrices</span><span class="toolkit__mark">Local partner notes</span><span class="toolkit__mark">Field journals</span><span class="toolkit__mark">Offline maps</span><span class="toolkit__mark">Transport manifests</span><span class="toolkit__mark">Access protocols</span>
+              <span class="toolkit__mark">Topographic maps</span><span class="toolkit__mark">Weather briefings</span><span class="toolkit__mark">Permit trackers</span><span class="toolkit__mark">Guide briefings</span><span class="toolkit__mark">GPX routes</span><span class="toolkit__mark">Tide tables</span><span class="toolkit__mark">Risk matrices</span><span class="toolkit__mark">Local partner notes</span><span class="toolkit__mark">Field journals</span><span class="toolkit__mark">Offline maps</span><span class="toolkit__mark">Transport manifests</span><span class="toolkit__mark">Access protocols</span>
+            </div>
+          </div>
+          <div class="toolkit__band toolkit__band--left">
+            <div class="toolkit__track">
+              <span class="toolkit__mark">Gear checks</span><span class="toolkit__mark">Emergency contacts</span><span class="toolkit__mark">Translation notes</span><span class="toolkit__mark">Post-trip debriefs</span><span class="toolkit__mark">Route cards</span><span class="toolkit__mark">Hut bookings</span><span class="toolkit__mark">Shuttle windows</span><span class="toolkit__mark">Water sources</span><span class="toolkit__mark">Wildlife protocols</span><span class="toolkit__mark">Group briefings</span><span class="toolkit__mark">Contingency plans</span><span class="toolkit__mark">Field photography</span>
+              <span class="toolkit__mark">Gear checks</span><span class="toolkit__mark">Emergency contacts</span><span class="toolkit__mark">Translation notes</span><span class="toolkit__mark">Post-trip debriefs</span><span class="toolkit__mark">Route cards</span><span class="toolkit__mark">Hut bookings</span><span class="toolkit__mark">Shuttle windows</span><span class="toolkit__mark">Water sources</span><span class="toolkit__mark">Wildlife protocols</span><span class="toolkit__mark">Group briefings</span><span class="toolkit__mark">Contingency plans</span><span class="toolkit__mark">Field photography</span>
+            </div>
+          </div>
+        </div>
+        <p class="toolkit__note">No client logos. These are the working practices, not a sponsorship list.</p>
+      </div>
+    </section>
+
+    <section class="proof" aria-labelledby="proof-title">
+      <div class="container">
+        <div class="proof__header">
+          <div>
+            <p class="eyebrow">Proof / Illustrative engagements</p>
+            <h2 class="proof__title" id="proof-title">What changes when<br><em>the route is right.</em></h2>
+          </div>
+          <p class="proof__intro">Three compact examples. Client names and metrics are placeholders, not published results.</p>
+        </div>
+
+        <div class="proof__grid">
+          <article class="proof-card" data-proof-card>
+            <figure class="proof-card__image">
+              <img src="/assets/img/services/1517824806704-9040b037703b.webp" alt="A lit tent under a star-filled sky" width="800" height="600" loading="lazy" decoding="async" data-fallback="/assets/img/services-fallback.svg">
+            </figure>
+            <div class="proof-card__body">
+              <span class="proof-card__type">Alpine guiding collective</span>
+              <p class="proof-card__metric"><span data-counter="32" data-digits="2" aria-hidden="true">32</span><span aria-hidden="true">%</span><span class="sr-only">32 percent fewer planning admin hours per departure</span></p>
+              <p class="proof-card__label">less planning admin per departure</p>
+              <a class="text-link" href="/work">View work <span aria-hidden="true">→</span></a>
+              <span class="proof-card__placeholder">Illustrative engagement</span>
+            </div>
+          </article>
+          <article class="proof-card" data-proof-card>
+            <figure class="proof-card__image">
+              <img src="/assets/img/services/1529156069898-49953e39b3ac.webp" alt="A group of friends with their arms around each other facing a mountain view" width="800" height="600" loading="lazy" decoding="async" data-fallback="/assets/img/services-fallback.svg">
+            </figure>
+            <div class="proof-card__body">
+              <span class="proof-card__type">Coastal expedition operator</span>
+              <p class="proof-card__metric"><span data-counter="3" data-digits="1" aria-hidden="true">3</span><span aria-hidden="true">&nbsp;weeks</span><span class="sr-only">3 weeks saved in seasonal route setup</span></p>
+              <p class="proof-card__label">saved in seasonal route setup</p>
+              <a class="text-link" href="/work">View work <span aria-hidden="true">→</span></a>
+              <span class="proof-card__placeholder">Illustrative engagement</span>
+            </div>
+          </article>
+          <article class="proof-card" data-proof-card>
+            <figure class="proof-card__image">
+              <img src="/assets/img/services/1488646953014-85cb44e25828.webp" alt="A field notes notebook, map, camera and bag arranged on a table" width="800" height="600" loading="lazy" decoding="async" data-fallback="/assets/img/services-fallback.svg">
+            </figure>
+            <div class="proof-card__body">
+              <span class="proof-card__type">Field research team</span>
+              <p class="proof-card__metric"><span data-counter="12" data-digits="2" aria-hidden="true">12</span><span aria-hidden="true">&nbsp;field days</span><span class="sr-only">12 field days documented in one shared log</span></p>
+              <p class="proof-card__label">documented in one shared log</p>
+              <a class="text-link" href="/work">View work <span aria-hidden="true">→</span></a>
+              <span class="proof-card__placeholder">Illustrative engagement</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="models" aria-labelledby="models-title" data-pricing>
+      <div class="container">
+        <div class="models__header">
+          <div>
+            <p class="eyebrow">Engagement models / Choose the depth</p>
+            <h2 class="models__title" id="models-title">Three ways<br><em>to work together.</em></h2>
+          </div>
+          <div class="models__toggle-wrap">
+            <div class="models__toggle" role="group" aria-label="Billing period">
+              <button class="models__toggle-button is-active" type="button" data-period="monthly" aria-pressed="true" aria-controls="pricing-grid">Monthly</button>
+              <button class="models__toggle-button" type="button" data-period="quarterly" aria-pressed="false" aria-controls="pricing-grid">Quarterly</button>
+            </div>
+            <p class="models__note">Placeholder pricing. Not a live quote.</p>
+          </div>
+        </div>
+
+        <p class="sr-only" aria-live="polite" data-pricing-status>Monthly placeholder pricing shown.</p>
+
+        <div class="models__grid" id="pricing-grid">
+          <article class="model-card">
+            <span class="model-card__index">01 / Sprint</span>
+            <h3>Sprint</h3>
+            <p class="model-card__description">A focused route sprint for one departure or one season.</p>
+            <p class="model-card__price"><span class="model-card__currency">$</span><span data-price-value data-monthly="2,400" data-quarterly="6,200">2,400</span><span class="model-card__period" data-price-period>/mo</span></p>
+            <ul class="model-card__features">
+              <li>Two-week scoping window</li>
+              <li>One route build</li>
+              <li>Guide briefing</li>
+            </ul>
+            <a class="text-link" href="/contact">Start a sprint <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="model-card model-card--featured">
+            <span class="model-card__index">02 / Partner</span>
+            <h3>Partner</h3>
+            <p class="model-card__description">Ongoing route design and field support across a season.</p>
+            <p class="model-card__price"><span class="model-card__currency">$</span><span data-price-value data-monthly="5,800" data-quarterly="15,000">5,800</span><span class="model-card__period" data-price-period>/mo</span></p>
+            <ul class="model-card__features">
+              <li>Monthly route reviews</li>
+              <li>Local partner liaison</li>
+              <li>Priority weather support</li>
+            </ul>
+            <a class="text-link text-link--light" href="/contact">Work as partners <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="model-card">
+            <span class="model-card__index">03 / Enterprise</span>
+            <h3>Enterprise</h3>
+            <p class="model-card__description">Multi-region programmes with shared standards and reporting.</p>
+            <p class="model-card__price"><span class="model-card__currency">$</span><span data-price-value data-monthly="9,600" data-quarterly="25,000">9,600</span><span class="model-card__period" data-price-period>/mo</span></p>
+            <ul class="model-card__features">
+              <li>Multi-region planning</li>
+              <li>Risk and access audits</li>
+              <li>Quarterly field review</li>
+            </ul>
+            <a class="text-link" href="/contact">Talk to us <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-cta" aria-labelledby="faq-cta-title">
+      <div class="container faq-cta__layout">
+        <div class="service-faq">
+          <p class="eyebrow">Questions / Before we start</p>
+          <h2 class="service-faq__title" id="faq-cta-title">A few useful<br><em>answers.</em></h2>
+          <div class="service-faq__list">
+            <details class="service-faq__item" name="service-faq">
+              <summary class="service-faq__question"><span class="service-faq__number">01</span><span>How quickly can a route be built?</span><span class="service-faq__mark" aria-hidden="true"></span></summary>
+              <div class="service-faq__panel"><p>A focused sprint usually takes two to three weeks after the brief is confirmed. Complex multi-region work takes longer, and we will say so before starting.</p></div>
+            </details>
+            <details class="service-faq__item" name="service-faq">
+              <summary class="service-faq__question"><span class="service-faq__number">02</span><span>Do you guide the journeys yourselves?</span><span class="service-faq__mark" aria-hidden="true"></span></summary>
+              <div class="service-faq__panel"><p>We design and support them with local guides and regional partners. The guide on the ground leads the day-to-day decisions and has the final call on conditions.</p></div>
+            </details>
+            <details class="service-faq__item" name="service-faq">
+              <summary class="service-faq__question"><span class="service-faq__number">03</span><span>Can you work with our existing operator?</span><span class="service-faq__mark" aria-hidden="true"></span></summary>
+              <div class="service-faq__panel"><p>Yes, when roles and responsibilities are clear. We can join as route designers, field support or an independent review layer without duplicating the team already in place.</p></div>
+            </details>
+            <details class="service-faq__item" name="service-faq">
+              <summary class="service-faq__question"><span class="service-faq__number">04</span><span>What is not included in the placeholder pricing?</span><span class="service-faq__mark" aria-hidden="true"></span></summary>
+              <div class="service-faq__panel"><p>Travel, accommodation, permits, insurance and local partner fees are quoted separately. Prices shown are placeholders, not live quotes or a substitute for a scoped proposal.</p></div>
+            </details>
+          </div>
+        </div>
+
+        <div class="service-cta">
+          <img src="/assets/img/services/1464278533981-50106e6176b1.webp" alt="A still mountain lake reflecting peaks at dusk" width="800" height="600" loading="lazy" decoding="async" data-fallback="/assets/img/services-fallback.svg">
+          <div class="service-cta__content">
+            <p class="eyebrow">Start a route</p>
+            <h2 class="service-cta__title">Plan the days,<br><em>not just the distance.</em></h2>
+            <p class="service-cta__description">Bring us the place, the season and the people. We’ll tell you what the route needs.</p>
+            <a class="btn btn--primary service-cta__button" href="/contact" data-magnetic>Talk through a route <span aria-hidden="true">→</span></a>
+            <span class="service-cta__note">Typical reply within two working days.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SHARED:FOOTER START -->
+  <footer class="site-footer section-dark" id="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__brand-column">
+          <a class="footer__brand" href="/index.html" aria-label="Stackly Tourism home"><img class="footer__brand-logo" src="/assets/logo/logo-stackly.webp" alt="Stackly Tourism" width="180" height="52"></a>
+          <p>Small-group journeys for curious travelers, led by local experts into wild places.</p>
+          <div class="footer__socials" aria-label="Social media">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (general link)">Instagram <span aria-hidden="true">→</span></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube (general link)">YouTube <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="footer__column">
+          <h2 class="footer__heading">Explore</h2>
+          <ul>
+            <li><a href="/404.html">Our approach</a></li>
+            <li><a href="/404.html">Ways to travel</a></li>
+            <li><a href="/404.html">Journeys</a></li>
+            <li><a href="/404.html">Field journal</a></li>
+            <li><a href="/404.html">Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h2 class="footer__heading">Useful things</h2>
+          <ul>
+            <li><a href="/404.html">Common questions</a></li>
+            <li><a href="/404.html">Talk to us</a></li>
+            <li><a href="/404.html">Privacy</a></li>
+            <li><a href="/404.html">Terms</a></li>
+          </ul>
+        </div>
+        <div class="footer__newsletter">
+          <h2 class="footer__heading">A note from the field</h2>
+          <p>Occasional route ideas and useful things to know outdoors. No weekly noise.</p>
+          <form class="newsletter" data-newsletter novalidate>
+            <label class="sr-only" for="newsletter-email">Your email address</label>
+            <div class="newsletter__field">
+              <input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="Email address" required aria-describedby="newsletter-message">
+              <button class="newsletter__submit" type="submit" aria-label="Subscribe to the Stackly field note"><span aria-hidden="true">→</span></button>
+            </div>
+            <p class="newsletter__message" id="newsletter-message" aria-live="polite">No backend connected. This form demonstrates the sign-up flow.</p>
+          </form>
+        </div>
+      </div>
+<div class="footer__bottom">
+        <p>© <span data-current-year>2026</span> Stackly Tourism. Concept site.</p>
+        <div class="footer__legal"><a href="/404.html">Privacy</a><a href="/404.html">Terms</a></div>
+        <a class="footer__top" href="#top">Back to top <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </footer>
+  <!-- SHARED:FOOTER END -->
+
+  <script src="/js/main.js" defer></script>
+  <script src="/js/services.js" defer></script>
+</body>
+</html>
