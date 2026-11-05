@@ -696,14 +696,14 @@ html.js .discipline.is-visible::after {
   position: relative;
   display: grid;
   gap: 12px;
-  padding-left: 27px;
+  padding-left: 44px;
 }
 
 .process-path::before {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 8px;
+  left: 16px;
   width: 1px;
   background: rgb(11 11 15 / 16%);
   content: "";
@@ -713,7 +713,7 @@ html.js .discipline.is-visible::after {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 8px;
+  left: 16px;
   width: 1px;
   transform: scaleY(var(--process-progress, 0));
   transform-origin: top;
@@ -729,7 +729,7 @@ html.js .discipline.is-visible::after {
 .process-step__node {
   position: absolute;
   top: 16px;
-  left: -27px;
+  left: -44px;
   display: grid;
   width: 32px;
   height: 32px;
