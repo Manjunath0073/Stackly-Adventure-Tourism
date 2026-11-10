@@ -539,7 +539,7 @@
   function initRouteGuard() {
     if (document.body.matches('.page--404, .page--auth, .dash-body')) return;
 
-    const allowedSelector = 'header, footer, .sidebar, form, .skip-link, .testimonial-carousel, .faq, .service-faq';
+    const allowedSelector = 'header, footer, .sidebar, form, .skip-link, .testimonial-carousel, .faq, .service-faq, .contact-map, .contact-studio__directions';
 
     function isAllowed(element) {
       return Boolean(element.closest(allowedSelector));
